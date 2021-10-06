@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MacHomeContainerComponent } from './Mac/mac-home-container/mac-home-container.component';
-import { HeaderContainerComponent } from './shared/header/header-container/header-container.component';
 import { HeaderNavbarComponent } from './shared/header/header-navbar/header-navbar.component';
 import { HeaderDeviceComponent } from './shared/header/header-device/header-device/header-device.component';
 import { SingleDeviceHeaderComponent } from './shared/header/header-device/single-device-header/single-device-header.component';
@@ -26,7 +25,6 @@ import { FooterNavLinksComponent } from './shared/footer/footer-nav-links/footer
   declarations: [
     AppComponent,
     MacHomeContainerComponent,
-    HeaderContainerComponent,
     HeaderNavbarComponent,
     HeaderDeviceComponent,
     SingleDeviceHeaderComponent,
