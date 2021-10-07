@@ -4,34 +4,35 @@
 }
 
 .new {
-    background: rgba(0,0,0,0);
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0);
     border-color: #bf4800;
     color: #f56300;
     margin: 0;
 }
 
 .productTitle {
-    font-size: 3rem;
+    font-size: 56px;
     line-height: 1.07143;
-    letter-spacing: -.005em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    letter-spacing: -0.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin: 0;
 }
 
 .motto {
-    margin-bottom: .4em;
-    font-size: 1.8rem;
+    margin-bottom: 0.4em;
+    font-size: 28px;
     line-height: 1.14286;
-    letter-spacing: .007em;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    letter-spacing: 0.007em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .startingPrice {
-    font-size: 1.05rem;
+    font-size: 17px;
     line-height: 1.47059;
     /* font-weight: 400; */
-    letter-spacing: -.022em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 button {
@@ -39,11 +40,11 @@ button {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
-    font-size: 1.05rem;
+    font-size: 17px;
     line-height: 1.17648;
     font-weight: 400;
-    letter-spacing: -.022em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    letter-spacing: -0.022em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     min-width: 28px;
     padding-left: 16px;
     padding-right: 16px;
@@ -63,26 +64,42 @@ button {
 
 #discover-more {
     color: #06c;
-    font-size: 1.05rem;
+    font-size: 17px;
     line-height: 1.47059;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    margin-top: .8em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 0.8em;
 }
 
 @media screen and (min-width: 735px) and (max-width: 1068px) {
-    .main-image{
+    .productTitle {
+        font-size: 40px;
+    }
+
+    .motto {
+        font-size: 24px;
+    }
+
+    .main-image {
         width: 735px;
         height: 308px;
         background-image: url("https://i.ibb.co/VHvdBHV/imac.png");
         background-size: 735px 308px;
     }
-} 
+}
 
 @media screen and (max-width: 734px) {
-    .main-image{
+    .productTitle {
+        font-size: 32px;
+    }
+
+    .motto {
+        font-size: 21px;
+    }
+
+    .main-image {
         width: 322px;
         height: 472px;
         background-image: url("https://i.ibb.co/Rz3Zz9V/imac-Small.png");
         background-size: 322px 472px;
     }
-} 
+}
