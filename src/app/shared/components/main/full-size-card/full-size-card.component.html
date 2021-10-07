@@ -1,1 +1,13 @@
-<p>full-size-card-container works!</p>
+<div class="container-fluid">
+    <div class="text-button text-center">
+        <p *ngIf="isNew" class="new">Novità</p>
+        <p class="productTitle"> {{productTitle}}</p>
+        <p class="motto"> {{motto}}</p>
+        <p class="startingPrice"> A partire da €{{startingPrice}}</p>
+        <a [href]=url><button class="btn btn-primary rounded-pill">Acquista</button></a>
+        <p id="discover-more"><a class="text-decoration-none" [href]=url>Scopri di più ></a></p>
+    </div>
+    <div class="container-fluid main-image mt-5">
+
+    </div>
+</div>
