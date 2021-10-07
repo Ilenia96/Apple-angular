@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mac-home-container.component.scss']
 })
 export class MacHomeContainerComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
