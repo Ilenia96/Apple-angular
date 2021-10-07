@@ -3,22 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MacHomeContainerComponent } from './Mac/mac-home-container/mac-home-container.component';
-import { HeaderNavbarComponent } from './shared/header/header-navbar/header-navbar.component';
-import { HeaderDeviceComponent } from './shared/header/header-device/header-device/header-device.component';
-import { SingleDeviceHeaderComponent } from './shared/header/header-device/single-device-header/single-device-header.component';
-import { MacMainContainerComponent } from './Mac/mac-main-container/mac-main-container.component';
-import { FullSizeCardContainerComponent } from './shared/main/full-size-card-container/full-size-card-container/full-size-card-container.component';
-import { SingleFullSizeCardComponent } from './shared/main/full-size-card-container/single-full-size-card/single-full-size-card.component';
-import { ProductSpecsTableComponent } from './shared/main/product-specs-table/product-specs-table/product-specs-table.component';
-import { ProductSingleSpecsComponent } from './shared/main/product-specs-table/product-single-specs/product-single-specs/product-single-specs.component';
-import { UpperSingleSpecsComponent } from './shared/main/product-specs-table/product-single-specs/upper-single-specs/upper-single-specs.component';
-import { LowerSingleSpecsComponent } from './shared/main/product-specs-table/product-single-specs/lower-single-specs/lower-single-specs.component';
-import { FooterContainerComponent } from './shared/footer/footer-container/footer-container.component';
-import { FooterNotesComponent } from './shared/footer/footer-notes/footer-notes.component';
-import { FooterNavComponent } from './shared/footer/footer-nav/footer-nav.component';
-import { CopyrightComponent } from './shared/footer/copyright/copyright.component';
-import { FooterNavLinksComponent } from './shared/footer/footer-nav-links/footer-nav-links.component';
+import { MacHomeContainerComponent } from './modules/core/Mac/mac-home-container/mac-home-container.component';
+import { HeaderNavbarComponent } from './shared/components/header/header-navbar/header-navbar.component';
+import { HeaderDeviceComponent } from './shared/components/header/header-device/header-device/header-device.component';
+import { SingleDeviceHeaderComponent } from './shared/components/header/header-device/single-device-header/single-device-header.component';
+import { MacMainContainerComponent } from './modules/core/Mac/mac-main-container/mac-main-container.component';
+import { FullSizeCardComponent } from './shared/components/main/full-size-card/full-size-card.component';
+import { ProductSpecsTableComponent } from './shared/components/main/product-specs-table/product-specs-table/product-specs-table.component';
+import { ProductSingleSpecsComponent } from './shared/components/main/product-specs-table/product-single-specs/product-single-specs/product-single-specs.component';
+import { UpperSingleSpecsComponent } from './shared/components/main/product-specs-table/product-single-specs/upper-single-specs/upper-single-specs.component';
+import { LowerSingleSpecsComponent } from './shared/components/main/product-specs-table/product-single-specs/lower-single-specs/lower-single-specs.component';
+import { FooterContainerComponent } from './shared/components/footer/footer-container/footer-container.component';
+import { FooterNotesComponent } from './shared/components/footer/footer-notes/footer-notes.component';
+import { FooterNavComponent } from './shared/components/footer/footer-nav/footer-nav.component';
+import { CopyrightComponent } from './shared/components/footer/copyright/copyright.component';
+import { FooterNavLinksComponent } from './shared/components/footer/footer-nav-links/footer-nav-links.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -29,8 +29,7 @@ import { FooterNavLinksComponent } from './shared/footer/footer-nav-links/footer
     HeaderDeviceComponent,
     SingleDeviceHeaderComponent,
     MacMainContainerComponent,
-    FullSizeCardContainerComponent,
-    SingleFullSizeCardComponent,
+    FullSizeCardComponent,
     ProductSpecsTableComponent,
     ProductSingleSpecsComponent,
     UpperSingleSpecsComponent,
@@ -43,7 +42,8 @@ import { FooterNavLinksComponent } from './shared/footer/footer-nav-links/footer
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

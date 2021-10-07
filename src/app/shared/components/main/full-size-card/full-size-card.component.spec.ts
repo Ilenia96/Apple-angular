@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FullSizeCardContainerComponent } from './full-size-card-container.component';
+import { FullSizeCardContainerComponent } from './full-size-card.component';
 
 describe('FullSizeCardContainerComponent', () => {
   let component: FullSizeCardContainerComponent;
