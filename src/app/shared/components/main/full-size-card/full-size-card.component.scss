@@ -68,3 +68,21 @@ button {
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     margin-top: .8em;
 }
+
+@media screen and (min-width: 735px) and (max-width: 1068px) {
+    .main-image{
+        width: 735px;
+        height: 308px;
+        background-image: url("https://i.ibb.co/VHvdBHV/imac.png");
+        background-size: 735px 308px;
+    }
+} 
+
+@media screen and (max-width: 734px) {
+    .main-image{
+        width: 322px;
+        height: 472px;
+        background-image: url("https://i.ibb.co/Rz3Zz9V/imac-Small.png");
+        background-size: 322px 472px;
+    }
+} 
