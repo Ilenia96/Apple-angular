@@ -22,6 +22,8 @@ export class FooterContainerComponent implements OnInit {
     '€ 4,99 al mese dopo la prova gratuita. È possibile sottoscrivere un solo abbonamento per ciascun gruppo “In famiglia”. L’offerta è valida per 3 mesi dall’attivazione del dispositivo idoneo. L’abbonamento si rinnova automaticamente salvo disdetta. Si applicano ulteriori <a href="#" class="footer-link color-darkgray">termini</a> e restrizioni.'
   ];
 
+  navLinkString: string = "<span class='mx-3 h4 color-lightgray'>></span> Mac";
+
   constructor() { }
 
   ngOnInit(): void {

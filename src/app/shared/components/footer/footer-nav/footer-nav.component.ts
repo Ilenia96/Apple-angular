@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-footer-nav',
@@ -8,7 +9,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class FooterNavComponent implements OnInit {
 
-  title: string = "<span class='mx-3 h4 color-lightgray'>></span> Mac";
+  @Input() navLinkString: string = "";
+
+  appleIcon = faApple;
 
   constructor() { }
 
