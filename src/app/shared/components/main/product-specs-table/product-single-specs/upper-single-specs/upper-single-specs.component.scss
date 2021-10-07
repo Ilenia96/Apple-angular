@@ -1,0 +1,32 @@
+.product{
+  .circles{
+    .circle-color{
+      width:18px;
+      height: 18px;
+      border-radius: 50px;
+      margin: 5px
+    }
+    .circle-color:nth-child(1){
+      background-color: #C7C8CA;
+    }
+    .circle-color:nth-child(2){
+      background-color: #B1B2B7;
+    }
+    .circle-color:nth-child(3){
+      background-color: #E3CCB4;
+    }
+  }
+
+
+  .buy-link{
+    a{
+      border-radius: 15px;
+      width: 50px;
+      height: 25px;
+      line-height: 10px;
+      background-color: #0577ED;
+    }
+    width: 100%;
+    border-bottom: 1px solid #d2d2d7;
+  }
+}
