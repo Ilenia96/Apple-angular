@@ -19,6 +19,9 @@ import { FooterNavComponent } from './shared/components/footer/footer-nav/footer
 import { CopyrightComponent } from './shared/components/footer/copyright/copyright.component';
 import { FooterNavLinksComponent } from './shared/components/footer/footer-nav-links/footer-nav-links.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HeaderContainerComponent } from './shared/components/header/header-container/header-container.component';
+import { DiscountDeviceComponent } from './shared/components/header/discount-device/discount-device.component';
+
 
 
 @NgModule({
@@ -38,7 +41,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterNotesComponent,
     FooterNavComponent,
     CopyrightComponent,
-    FooterNavLinksComponent
+    FooterNavLinksComponent,
+    HeaderContainerComponent,
+    DiscountDeviceComponent
   ],
   imports: [
     BrowserModule,
