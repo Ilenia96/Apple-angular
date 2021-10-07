@@ -1,0 +1,30 @@
+/* font style */
+
+.footer-font {
+	font-size: 0.75rem;
+}
+.footer-link {
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+		color: #515154;
+	}
+}
+
+/* structure style */
+
+.padding-left-1rem {
+	padding-left: 1rem;
+}
+.margin-xy-05rem {
+	margin: 0.5rem 0;
+}
+
+/* color style */
+
+.color-gray {
+	color: #86868B;
+}
+.color-darkgray {
+	color: #515154;
+}
