@@ -7,3 +7,10 @@ div.container-fluid {
     letter-spacing: -.016em;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
+
+@media screen and (max-width: 734px) {
+
+    #discount-line {
+        width: 308px;
+    }
+}
