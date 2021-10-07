@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-single-device-header',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./single-device-header.component.scss']
 })
 export class SingleDeviceHeaderComponent implements OnInit {
+
+  @Input() macs!: Array<any>;
+  
 
   constructor() { }
 
