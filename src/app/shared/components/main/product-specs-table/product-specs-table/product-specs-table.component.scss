@@ -1,0 +1,13 @@
+.product-container{
+  background-color: #FAFAFA;
+  a{
+    color: #1C77D1;
+  }
+  button{
+    border-radius: 0;
+    &:hover{
+      border-bottom: 1px solid black;
+    }
+  }
+
+}

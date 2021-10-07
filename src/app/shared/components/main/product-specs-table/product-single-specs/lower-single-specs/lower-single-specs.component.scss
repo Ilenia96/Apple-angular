@@ -1,0 +1,28 @@
+$title-description-color:#86868b;
+$title-specs-size: 14px;
+
+.list-specs{
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d2d2d7;
+  div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    img{
+    }
+    p:nth-child(2){
+      font-size: $title-specs-size;
+      margin: 0 auto;
+    }
+    p:nth-child(3){
+      font-size: $title-specs-size;
+      color: $title-description-color;
+    }
+  }
+
+
+}
