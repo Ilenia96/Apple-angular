@@ -1,4 +1,4 @@
-import { ILink } from './ILink';
+import { ILink } from '../footer-container/ILink';
 import { Component, OnInit } from '@angular/core';
 import { buyProducts} from './links';
 import { appleServices } from './links';

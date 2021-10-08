@@ -1,4 +1,4 @@
-import { ILink } from "./ILink";
+import { ILink } from "../footer-container/ILink";
 
 export const buyProducts : ILink[] = [
   {name: 'Mac' , url: ''},
