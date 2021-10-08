@@ -1,6 +1,8 @@
 div.container-fluid {
+    position: absolute;
+    transition-duration: 1500ms;
     padding: 9px 0;
-    background-color: #f5f5f7;
+    // background-color: #f5f5f7;
     color: #6e6e70;
     font-size: 12px;
     line-height: 1.42859;

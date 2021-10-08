@@ -1,5 +1,13 @@
-<div class="container-fluid text-center d-flex justify-content-center">
-    <div id="discount-line" *ngIf="discount">
-        {{discountText}}. <a class="text-decoration-none" [href]=url>Acquista ora ></a>
-    </div>
+<div 
+
+[ngStyle]="{ 'bottom': bottom, 'z-index': zIndex, 'background-color': bgcolor, 'color': textColor }"
+
+class="container-fluid text-center d-flex justify-content-center">
+  <div id="discount-line" *ngIf="discount">
+    {{ discountText }}.
+    <a [ngStyle]="{'color': linkColor}" class="text-decoration-none" [href]="url">Acquista ora ></a>
+  </div>
 </div>
+
+<!-- [style.bottom.px] = bottom -->
+<!-- [ngClass]="{ bottom: bottom }" -->
