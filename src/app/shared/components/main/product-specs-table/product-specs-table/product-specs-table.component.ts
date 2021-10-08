@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IProductMac } from 'src/app/models/Products-mac';
 
 @Component({
   selector: 'app-product-specs-table',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-specs-table.component.scss']
 })
 export class ProductSpecsTableComponent implements OnInit {
+
 
   constructor() { }
 
