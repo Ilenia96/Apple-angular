@@ -1,6 +1,7 @@
 img {
     max-width: 50px;
     max-height: 55px;
+    cursor: pointer;
 }
 
 .single-device{
@@ -26,4 +27,11 @@ img {
     color: #bf4800;
 }
 
+a {
+    text-decoration: none;
+    color: #1d1d1f;
+}
 
+a:hover {
+    color: #1e77d1;
+}
