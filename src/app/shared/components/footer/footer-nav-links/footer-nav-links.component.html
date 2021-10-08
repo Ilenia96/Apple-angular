@@ -4,9 +4,9 @@
     <li *ngFor="let buyproduct of buyproducts"><a href="#">{{buyproduct.name}}</a></li>
   </ul>
 
-  <div class="container-1">
+  <div class="flex-column">
     <ul><b>Servizi</b>
-      <li *ngFor="let aService of aServices"><a href="#">{{aService.name}}</a></li>
+      <li *ngFor="let aService of aServices"><a [routerLink]="aService.url">{{aService.name}}</a></li>
 
     </ul>
 
@@ -19,7 +19,7 @@
     <li *ngFor="let aStore of aStores "><a href="#">{{aStore.name}}</a></li>
   </ul>
 
-  <div class="container-2">
+  <div class="flex-column">
 
     <ul><b>Business</b>
       <li *ngFor="let company of companies "><a href="#">{{company.name}}</a></li>
@@ -34,7 +34,7 @@
     </ul>
   </div>
 
-  <div class="container-3">
+  <div class="flex-column">
 
     <ul><b>I valori di Apple</b>
       <li *ngFor="let applevalue of applevalues "><a href="#">{{applevalue.name}}</a></li>

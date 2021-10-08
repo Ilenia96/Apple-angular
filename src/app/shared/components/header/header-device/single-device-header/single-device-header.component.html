@@ -1,1 +1,11 @@
-<p>single-device-header works!</p>
+
+<nav class="single-device-container" *ngFor="let mac of macs">
+
+    <div class="single-device">
+        <img src="{{mac.imageUrl}}" alt="" srcset="">
+        <span class="caption"><a href="#" target="_blank" rel="noopener noreferrer">{{mac.name}}</a></span>
+        <span class="new" *ngIf="mac.name == 'iMac 24”'">New</span>
+    </div>
+
+</nav>
+

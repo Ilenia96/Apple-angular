@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-discount-device',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./discount-device.component.scss']
 })
 export class DiscountDeviceComponent implements OnInit {
+
+  @Input() discount !: boolean;
+  @Input() discountText !: string;
+  @Input() url !: string;
 
   constructor() { }
 

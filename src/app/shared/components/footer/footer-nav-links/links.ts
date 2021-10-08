@@ -1,7 +1,7 @@
 import { ILink } from "../footer-container/ILink";
 
 export const buyProducts : ILink[] = [
-  {name: 'Mac' , url: ''},
+  {name: 'Mac' , url: '/mac'},
   {name: 'iPad' , url: ''},
   {name: 'iPhone' , url: ''},
   {name: 'Watch' , url: ''},
