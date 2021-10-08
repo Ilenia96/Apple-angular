@@ -30,7 +30,7 @@ export class DiscountDeviceComponent implements OnInit {
     }, 0)
     setTimeout(() => {
       this.zIndex = "1";
-    }, 500)
+    }, 2500)
     setTimeout(() => {
       this.bgcolor = "#f5f5f7";
       this.textColor = "#6e6e70";
