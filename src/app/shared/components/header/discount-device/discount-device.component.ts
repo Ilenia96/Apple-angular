@@ -25,8 +25,6 @@ export class DiscountDeviceComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.bottom = "-35px";
-      // this.zIndex = "1";
-      console.log(`ciao`);
     }, 0)
     setTimeout(() => {
       this.zIndex = "1";
