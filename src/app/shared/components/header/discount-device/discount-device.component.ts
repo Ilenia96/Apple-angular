@@ -25,14 +25,17 @@ export class DiscountDeviceComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.bottom = "-35px";
-      this.zIndex = "1";
+      // this.zIndex = "1";
       console.log(`ciao`);
     }, 0)
+    setTimeout(() => {
+      this.zIndex = "1";
+    }, 500)
     setTimeout(() => {
       this.bgcolor = "#f5f5f7";
       this.textColor = "#6e6e70";
       this.linkColor = "#0066CB";
-    }, 1500)
+    }, 3000)
   }
 
 }
