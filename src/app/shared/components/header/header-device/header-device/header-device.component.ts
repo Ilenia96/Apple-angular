@@ -11,7 +11,7 @@ export class HeaderDeviceComponent implements OnInit {
   macs: Array<any> = [
      {
        name: "MacBook Air",
-       imageUrl: "../../../../../../assets/img/Mac/header/mac-1.svg"
+       imageUrl: "../../../../../assets/img/Mac/header/mac-1.svg"
      },
      {
        name: "MacBook Pro 13”",
