@@ -13,7 +13,7 @@ export class LowerSingleSpecsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("HEY", this.producta)
+
   }
 
 }
