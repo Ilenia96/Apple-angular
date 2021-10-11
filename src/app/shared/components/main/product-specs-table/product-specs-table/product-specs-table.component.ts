@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IProductMac } from 'src/app/models/Products-mac';
 
 @Component({
@@ -8,6 +8,7 @@ import { IProductMac } from 'src/app/models/Products-mac';
 })
 export class ProductSpecsTableComponent implements OnInit {
 
+@Input () productx!: IProductMac[];
 
   constructor() { }
 

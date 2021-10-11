@@ -1,15 +1,12 @@
-<div class="container d-flex flex-column product">
 
   <a href="" class="mb-4">
     <img src="{{product.imgUrl}}" alt="">
   </a>
-
-  <div class="d-flex flex-column align-items-center">
-
-    <h4>{{product.title}}</h4>
-    <p><span>from ${{product.price}}</span></p>
+  <h4>{{product.title}}</h4>
+  <p><span>from ${{product.price}}</span></p>
 
 
+  <div class="color">
     <div class="d-flex justify-content-center circles mb-3">
       <div class="circle-color"></div>
       <div class="circle-color"></div>
@@ -22,8 +19,9 @@
       </a>
     </div>
 
+
   </div>
 
-</div>
+  <app-lower-single-specs class="col-9 mt-3 flex-column align-items-center linea" [producta]="product"></app-lower-single-specs>
 
-<app-lower-single-specs class=" d-flex flex-column justify-content-center" [product]="product" ></app-lower-single-specs>
+
