@@ -1,12 +1,19 @@
+@import 'src/assets/SCSS/mixins.scss';
+
 div.container-fluid {
+    position: absolute;
+    transition: color 2000ms, 
+    bottom 1000ms;
     padding: 9px 0;
-    background-color: #f5f5f7;
     color: #6e6e70;
     font-size: 12px;
     line-height: 1.42859;
     font-weight: 400;
-    // letter-spacing: -.016em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-text;
+}
+
+a {
+    transition: color 2000ms;
 }
 
 @media screen and (max-width: 734px) {

@@ -1,3 +1,5 @@
+@import 'src/assets/SCSS/mixins.scss';
+
 .container-fluid {
     padding: 63px 0 120px 0;
     font-weight: 500;
@@ -15,7 +17,7 @@
     font-size: 56px;
     line-height: 1.07143;
     letter-spacing: -0.005em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-display;
     margin: 0;
 }
 
@@ -24,7 +26,7 @@
     font-size: 28px;
     line-height: 1.14286;
     letter-spacing: 0.007em;
-    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-display;
 }
 
 .startingPrice {
@@ -32,7 +34,7 @@
     line-height: 1.47059;
     /* font-weight: 400; */
     letter-spacing: -0.022em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-text;
 }
 
 button {
@@ -44,7 +46,7 @@ button {
     line-height: 1.17648;
     font-weight: 400;
     letter-spacing: -0.022em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-text;
     min-width: 28px;
     padding-left: 16px;
     padding-right: 16px;
@@ -66,7 +68,7 @@ button {
     color: #06c;
     font-size: 17px;
     line-height: 1.47059;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-text;
     margin-top: 0.8em;
 }
 
