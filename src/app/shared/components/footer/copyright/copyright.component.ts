@@ -1,4 +1,7 @@
+import { ILink } from './../footer-container/ILink';
 import { Component, OnInit } from '@angular/core';
+import { Privacy } from './Privacy';
+
 
 @Component({
   selector: 'app-copyright',
@@ -6,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./copyright.component.scss']
 })
 export class CopyrightComponent implements OnInit {
+  privacylinks: ILink[] = Privacy;
 
   constructor() { }
 

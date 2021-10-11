@@ -1,89 +1,47 @@
 <div class="nav-footer">
+
   <ul><b>Scopri e acquista</b>
-    <li><a href="#">Mac</a></li>
-    <li><a href="#">iPad</a></li>
-    <li><a href="#">iPhone</a></li>
-    <li><a href="#">Watch</a></li>
-    <li><a href="#">TV</a></li>
-    <li><a href="#">Music</a></li>
-    <li><a href="#">AirPods</a></li>
-    <li><a href="#">iPod touch</a></li>
-    <li><a href="#">AirTag</a></li>
-    <li><a href="#">Accessori</a></li>
-    <li><a href="#">Carte regalo</a></li>
+    <li *ngFor="let buyproduct of buyproducts"><a [routerLink]="buyproduct.url">{{buyproduct.name}}</a></li>
   </ul>
-  <div class="container-1">
+
+  <div class="flex-column">
     <ul><b>Servizi</b>
-      <li><a href="#">Apple Music</a></li>
-      <li><a href="#">Apple TV+</a></li>
-      <li><a href="#">Apple Fitness+</a></li>
-      <li><a href="#">Apple Arcade</a></li>
-      <li><a href="#">iCloud</a></li>
-      <li><a href="#">Apple One</a></li>
-      <li><a href="#">Apple Pay</a></li>
-      <li><a href="#">Apple Books</a></li>
-      <li><a href="#">Apple Podcast</a></li>
-      <li><a href="#">App Store</a></li>
+      <li *ngFor="let aService of aServices"><a href="#">{{aService.name}}</a></li>
+
     </ul>
 
     <ul><b>Account</b>
-      <li><a href="#">Gestisci il tuo ID Apple</a></li>
-      <li><a href="#">Account Apple Store</a></li>
-      <li><a href="#">Cloud.com</a></li>
+      <li *ngFor="let account of accounts "><a href="#">{{account.name}}</a></li>
     </ul>
   </div>
 
   <ul><b>Apple Store</b>
-    <li><a href="#">Trova uno Store</a></li>
-    <li><a href="#">Acquista online</a></li>
-    <li><a href="#">Genius Bar</a></li>
-    <li><a href="#">Today at Apple</a></li>
-    <li><a href="#">Campo Estivo Apple</a></li>
-    <li><a href="#">L'app Apple Store</a></li>
-    <li><a href="#">Ricondizionati e fine serie</a></li>
-    <li><a href="#">Finanziamenti</a></li>
-    <li><a href="#">Apple Trade In</a></li>
-    <li><a href="#">Stato dell'ordine</a></li>
-    <li><a href="#">Assistenza agli acquisti</a></li>
+    <li *ngFor="let aStore of aStores "><a href="#">{{aStore.name}}</a></li>
   </ul>
 
-  <div class="container-2">
+  <div class="flex-column">
 
     <ul><b>Business</b>
-      <li><a href="#">Apple per il business</a></li>
-      <li><a href="#">Acquisti per le aziende</a></li>
+      <li *ngFor="let company of companies "><a href="#">{{company.name}}</a></li>
     </ul>
 
     <ul><b>Education</b>
-      <li><a href="#">Apple nell'istruzione</a></li>
-      <li><a href="#">Acquisti per l'università</a></li>
+      <li *ngFor="let education of educations "><a href="#">{{education.name}}</a></li>
     </ul>
 
     <ul><b>Per la salute</b>
-      <li><a href="#">Apple e la salute</a></li>
-      <li><a href="#">Salute su Apple Watch</a></li>
+      <li *ngFor="let gesund of gesunds "><a href="#">{{gesund.name}}</a></li>
     </ul>
   </div>
 
-  <div class="container-3">
+  <div class="flex-column">
 
     <ul><b>I valori di Apple</b>
-      <li><a href="#">Accessibilità</a></li>
-      <li><a href="#">Ambiente</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">Responsabilità dei fornitori</a></li>
+      <li *ngFor="let applevalue of applevalues "><a href="#">{{applevalue.name}}</a></li>
     </ul>
 
     <ul><b>Info su Apple</b>
-      <li><a href="#">Newsroom</a></li>
-      <li><a href="#">Leadership Apple</a></li>
-      <li><a href="#">Opportunità di lavoro</a></li>
-      <li><a href="#">Garanzia</a></li>
-      <li><a href="#">Investitori</a></li>
-      <li><a href="#">Etica e rispetto delle norme</a></li>
-      <li><a href="#">Eventi</a></li>
-      <li><a href="#">Posti di lavoro in Europa</a></li>
-      <li><a href="#">Contatti</a></li>
+      <li *ngFor="let info of infos "><a href="#">{{info.name}}</a></li>
     </ul>
   </div>
 </div>
