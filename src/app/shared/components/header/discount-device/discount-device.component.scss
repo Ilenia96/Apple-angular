@@ -1,3 +1,5 @@
+@import 'src/assets/SCSS/mixins.scss';
+
 div.container-fluid {
     position: absolute;
     transition: color 2000ms, 
@@ -7,11 +9,13 @@ div.container-fluid {
     font-size: 12px;
     line-height: 1.42859;
     font-weight: 400;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    @include font-family-text;
 }
+
 a {
     transition: color 2000ms;
 }
+
 @media screen and (max-width: 734px) {
     #discount-line {
         width: 308px;
