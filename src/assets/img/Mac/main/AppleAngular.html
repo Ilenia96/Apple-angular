@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>AppleAngular</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<link rel="stylesheet" href="./AppleAngular_files/styles.css"><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAuY29tcG9uZW50LnNjc3MifQ== */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWMtaG9tZS1jb250YWluZXIuY29tcG9uZW50LnNjc3MifQ== */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJoZWFkZXItY29udGFpbmVyLmNvbXBvbmVudC5zY3NzIn0= */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWMtbWFpbi1jb250YWluZXIuY29tcG9uZW50LnNjc3MifQ== */</style><style>.footer-background[_ngcontent-bmk-c38] {
+  background-color: #f5f5f7;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci1jb250YWluZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx5QkFBQTtBQUNKIiwiZmlsZSI6ImZvb3Rlci1jb250YWluZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9vdGVyLWJhY2tncm91bmQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmNWY1Zjc7XG59Il19 */</style><style>.first-nav[_ngcontent-bmk-c23] {
+  height: 44px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.92);
+  color: #f5f5f7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.first-nav[_ngcontent-bmk-c23]   .main-nav-li[_ngcontent-bmk-c23] {
+  list-style: none;
+  opacity: 0.8;
+  font-size: 14px;
+  padding: 0rem 3vw 0rem 2vw;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.first-nav[_ngcontent-bmk-c23]   .main-nav-li[_ngcontent-bmk-c23]:hover {
+  opacity: 1;
+}
+.nav-icon[_ngcontent-bmk-c23] {
+  font-size: 18px;
+}
+.mob-nav[_ngcontent-bmk-c23] {
+  background-color: rgba(0, 0, 0, 0.92);
+  color: #f5f5f7;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  display: none;
+}
+.mob-nav-li[_ngcontent-bmk-c23] {
+  opacity: 0.8;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.mob-nav-li[_ngcontent-bmk-c23]:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 766px) {
+  .first-nav[_ngcontent-bmk-c23] {
+    display: none;
+  }
+
+  .mob-nav[_ngcontent-bmk-c23] {
+    display: inline-flex;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci1uYXZiYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHFDQUFBO0VBQ0EsY0FBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0VBQ0EsdUJBQUE7QUFDSjtBQUFJO0VBQ0ksZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUVBLDBCQUFBO0VBQ0EsZ0hBQUE7QUFDUjtBQUNJO0VBQ0ksVUFBQTtBQUNSO0FBR0E7RUFDSSxlQUFBO0FBQUo7QUFHQTtFQUNJLHFDQUFBO0VBQ0EsY0FBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSw4QkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxhQUFBO0FBQUo7QUFHQTtFQUNJLFlBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0FBQUo7QUFHQTtFQUNJLFVBQUE7QUFBSjtBQUdBO0VBQ0k7SUFDSSxhQUFBO0VBQU47O0VBRUU7SUFDSSxvQkFBQTtFQUNOO0FBQ0YiLCJmaWxlIjoiaGVhZGVyLW5hdmJhci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5maXJzdC1uYXYge1xuICAgIGhlaWdodDogNDRweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsMCwwLDAuOTIpO1xuICAgIGNvbG9yOiAjZjVmNWY3O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC5tYWluLW5hdi1saXtcbiAgICAgICAgbGlzdC1zdHlsZTogbm9uZTtcbiAgICAgICAgb3BhY2l0eTogMC44O1xuICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIC8vIHBhZGRpbmc6IDBweCAzNXB4IDBweCAzNXB4O1xuICAgICAgICBwYWRkaW5nOiAwcmVtIDN2dyAwcmVtIDJ2dztcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiU0YgUHJvIFRleHRcIixcIk15cmlhZCBTZXQgUHJvXCIsXCJTRiBQcm8gSWNvbnNcIixcIkhlbHZldGljYSBOZXVlXCIsXCJIZWx2ZXRpY2FcIixcIkFyaWFsXCIsc2Fucy1zZXJpZjtcbiAgICB9XG4gICAgLm1haW4tbmF2LWxpOmhvdmVye1xuICAgICAgICBvcGFjaXR5OiAxO1xuICAgIH1cbn1cblxuLm5hdi1pY29ue1xuICAgIGZvbnQtc2l6ZTogMThweDtcbn1cblxuLm1vYi1uYXYge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsMC45Mik7XG4gICAgY29sb3I6ICNmNWY1Zjc7XG4gICAgaGVpZ2h0OiA0OHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGZsZXgtd3JhcDogbm93cmFwO1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5tb2ItbmF2LWxpe1xuICAgIG9wYWNpdHk6IDAuODtcbiAgICBwYWRkaW5nLWxlZnQ6IDFyZW07XG4gICAgcGFkZGluZy1yaWdodDogMXJlbTtcbn1cblxuLm1vYi1uYXYtbGk6aG92ZXJ7XG4gICAgb3BhY2l0eTogMTtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY2cHgpIHtcbiAgICAuZmlyc3QtbmF2e1xuICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgIH1cbiAgICAubW9iLW5hdntcbiAgICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gICAgfVxufSJdfQ== */</style><style>*[_ngcontent-bmk-c25] {
+  width: 100%;
+  height: 100px;
+  background-color: #f8f8f9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1156px) {
+  *[_ngcontent-bmk-c25] {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    justify-content: start;
+    padding-left: 33.8px;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci1kZXZpY2UuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBUUE7RUFDSSxXQUFBO0VBQ0ksYUFBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSx1QkFBQTtBQVBSOztBQVVBO0VBQ0k7SUFDSSxrQkFBQTtJQUNBLGtCQUFBO0lBQ0Esc0JBQUE7SUFDQSxvQkFBQTtFQVBOO0FBQ0YiLCJmaWxlIjoiaGVhZGVyLWRldmljZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIC5kZXZpY2UtYmFyIHtcbi8vICAgICB3aWR0aDogMTAwJTtcbi8vICAgICBoZWlnaHQ6IDkycHg7XG4vLyAgICAgYmFja2dyb3VuZC1jb2xvcjogeWVsbG93OyAvLyNmOGY4Zjk7XG4vLyAgICAgZGlzcGxheTogZmxleDtcbi8vICAgICBmbGV4LWRpcmVjdGlvbjogcm93LXJldmVyc2U7XG4vLyB9XG5cbip7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIGhlaWdodDogMTAwcHg7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICAjZjhmOGY5OyAvL3llbGxvdztcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdzsgIFxuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTE1NnB4KSB7XG4gICAgKntcbiAgICAgICAgb3ZlcmZsb3cteTogaGlkZGVuO1xuICAgICAgICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3RhcnQ7XG4gICAgICAgIHBhZGRpbmctbGVmdDogMzMuOHB4O1xuICAgIH1cbn0gXG5cblxuIl19 */</style><style>div.container-fluid[_ngcontent-bmk-c26] {
+  padding: 9px 0;
+  background-color: #f5f5f7;
+  color: #6e6e70;
+  font-size: 12px;
+  line-height: 1.42859;
+  font-weight: 400;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@media screen and (max-width: 734px) {
+  #discount-line[_ngcontent-bmk-c26] {
+    width: 308px;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImRpc2NvdW50LWRldmljZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGNBQUE7RUFDQSx5QkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0Esb0JBQUE7RUFDQSxnQkFBQTtFQUVBLDhGQUFBO0FBQUo7O0FBR0E7RUFDSTtJQUNJLFlBQUE7RUFBTjtBQUNGIiwiZmlsZSI6ImRpc2NvdW50LWRldmljZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdi5jb250YWluZXItZmx1aWQge1xuICAgIHBhZGRpbmc6IDlweCAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmNWY1Zjc7XG4gICAgY29sb3I6ICM2ZTZlNzA7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxLjQyODU5O1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgLy8gbGV0dGVyLXNwYWNpbmc6IC0uMDE2ZW07XG4gICAgZm9udC1mYW1pbHk6IFwiU0YgUHJvIFRleHRcIiwgXCJTRiBQcm8gSWNvbnNcIiwgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBcIkhlbHZldGljYVwiLCBcIkFyaWFsXCIsIHNhbnMtc2VyaWY7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDczNHB4KSB7XG4gICAgI2Rpc2NvdW50LWxpbmUge1xuICAgICAgICB3aWR0aDogMzA4cHg7XG4gICAgfVxufVxuIl19 */</style><style>img[_ngcontent-bmk-c24] {
+  max-width: 50px;
+  max-height: 55px;
+}
+
+.single-device[_ngcontent-bmk-c24] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  margin: 1.2vw 1.2vw 1vw 1.2vw;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+}
+
+.caption[_ngcontent-bmk-c24] {
+  display: inline-flex;
+}
+
+.new[_ngcontent-bmk-c24] {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  color: #bf4800;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNpbmdsZS1kZXZpY2UtaGVhZGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0FBQ0o7O0FBRUE7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0Esa0JBQUE7RUFFQSxtQkFBQTtFQUNBLDZCQUFBO0VBQ0EsOEZBQUE7RUFDQSxlQUFBO0FBQUo7O0FBR0E7RUFDSSxvQkFBQTtBQUFKOztBQUdBO0VBQ0ksOEZBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtBQUFKIiwiZmlsZSI6InNpbmdsZS1kZXZpY2UtaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1nIHtcbiAgICBtYXgtd2lkdGg6IDUwcHg7XG4gICAgbWF4LWhlaWdodDogNTVweDtcbn1cblxuLnNpbmdsZS1kZXZpY2V7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIC8vIG1hcmdpbjogN3B4IDVweCA3cHggMjVweDtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG1hcmdpbjogMS4ydncgMS4ydncgMXZ3IDEuMnZ3O1xuICAgIGZvbnQtZmFtaWx5OiBcIlNGIFBybyBUZXh0XCIsXCJTRiBQcm8gSWNvbnNcIixcIkhlbHZldGljYSBOZXVlXCIsXCJIZWx2ZXRpY2FcIixcIkFyaWFsXCIsc2Fucy1zZXJpZjtcbiAgICBmb250LXNpemU6IDEycHg7XG59XG5cbi5jYXB0aW9ue1xuICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xufVxuXG4ubmV3e1xuICAgIGZvbnQtZmFtaWx5OiBcIlNGIFBybyBUZXh0XCIsXCJTRiBQcm8gSWNvbnNcIixcIkhlbHZldGljYSBOZXVlXCIsXCJIZWx2ZXRpY2FcIixcIkFyaWFsXCIsc2Fucy1zZXJpZjtcbiAgICBmb250LXNpemU6IDEwcHg7XG4gICAgY29sb3I6ICNiZjQ4MDA7XG59XG5cblxuIl19 */</style><style>.container-fluid[_ngcontent-bmk-c28] {
+  padding: 63px 0 120px 0;
+  font-weight: 600;
+}
+
+.new[_ngcontent-bmk-c28] {
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0);
+  border-color: #bf4800;
+  color: #f56300;
+  margin: 0;
+}
+
+.productTitle[_ngcontent-bmk-c28] {
+  font-size: 56px;
+  line-height: 1.07143;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+}
+
+.motto[_ngcontent-bmk-c28] {
+  margin-bottom: 0.4em;
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: 0.007em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.startingPrice[_ngcontent-bmk-c28] {
+  font-size: 17px;
+  line-height: 1.47059;
+  
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+button[_ngcontent-bmk-c28] {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  min-width: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+
+.main-image[_ngcontent-bmk-c28] {
+  width: 1070px;
+  height: 446px;
+  background-image: url("https://i.ibb.co/VHvdBHV/imac.png");
+  background-position: center;
+}
+
+#discover-more[_ngcontent-bmk-c28] {
+  color: #06c;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin-top: 0.8em;
+}
+
+@media screen and (min-width: 735px) and (max-width: 1068px) {
+  .productTitle[_ngcontent-bmk-c28] {
+    font-size: 40px;
+  }
+
+  .motto[_ngcontent-bmk-c28] {
+    font-size: 24px;
+  }
+
+  .main-image[_ngcontent-bmk-c28] {
+    width: 735px;
+    height: 308px;
+    background-image: url("https://i.ibb.co/VHvdBHV/imac.png");
+    background-size: 735px 308px;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .productTitle[_ngcontent-bmk-c28] {
+    font-size: 32px;
+  }
+
+  .motto[_ngcontent-bmk-c28] {
+    font-size: 21px;
+  }
+
+  .main-image[_ngcontent-bmk-c28] {
+    width: 322px;
+    height: 472px;
+    background-image: url("https://i.ibb.co/Rz3Zz9V/imac-Small.png");
+    background-size: 322px 472px;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZ1bGwtc2l6ZS1jYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksdUJBQUE7RUFDQSxnQkFBQTtBQUNKOztBQUVBO0VBQ0ksZUFBQTtFQUNBLDRCQUFBO0VBQ0EscUJBQUE7RUFDQSxjQUFBO0VBQ0EsU0FBQTtBQUNKOztBQUVBO0VBQ0ksZUFBQTtFQUNBLG9CQUFBO0VBQ0Esd0JBQUE7RUFDQSxpR0FBQTtFQUNBLFNBQUE7QUFDSjs7QUFFQTtFQUNJLG9CQUFBO0VBQ0EsZUFBQTtFQUNBLG9CQUFBO0VBQ0EsdUJBQUE7RUFDQSxpR0FBQTtBQUNKOztBQUVBO0VBQ0ksZUFBQTtFQUNBLG9CQUFBO0VBQ0Esc0JBQUE7RUFDQSx3QkFBQTtFQUNBLDhGQUFBO0FBQ0o7O0FBRUE7RUFDSSxlQUFBO0VBQ0EscUJBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLG9CQUFBO0VBQ0EsZ0JBQUE7RUFDQSx3QkFBQTtFQUNBLDhGQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7QUFDSjs7QUFFQTtFQUNJLGFBQUE7RUFDQSxhQUFBO0VBQ0EsMERBQUE7RUFDQSwyQkFBQTtBQUNKOztBQUVBO0VBQ0ksV0FBQTtFQUNBLGVBQUE7RUFDQSxvQkFBQTtFQUNBLDhGQUFBO0VBQ0EsaUJBQUE7QUFDSjs7QUFFQTtFQUNJO0lBQ0ksZUFBQTtFQUNOOztFQUVFO0lBQ0ksZUFBQTtFQUNOOztFQUVFO0lBQ0ksWUFBQTtJQUNBLGFBQUE7SUFDQSwwREFBQTtJQUNBLDRCQUFBO0VBQ047QUFDRjs7QUFFQTtFQUNJO0lBQ0ksZUFBQTtFQUFOOztFQUdFO0lBQ0ksZUFBQTtFQUFOOztFQUdFO0lBQ0ksWUFBQTtJQUNBLGFBQUE7SUFDQSxnRUFBQTtJQUNBLDRCQUFBO0VBQU47QUFDRiIsImZpbGUiOiJmdWxsLXNpemUtY2FyZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXItZmx1aWQge1xuICAgIHBhZGRpbmc6IDYzcHggMCAxMjBweCAwO1xuICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG59XG5cbi5uZXcge1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDApO1xuICAgIGJvcmRlci1jb2xvcjogI2JmNDgwMDtcbiAgICBjb2xvcjogI2Y1NjMwMDtcbiAgICBtYXJnaW46IDA7XG59XG5cbi5wcm9kdWN0VGl0bGUge1xuICAgIGZvbnQtc2l6ZTogNTZweDtcbiAgICBsaW5lLWhlaWdodDogMS4wNzE0MztcbiAgICBsZXR0ZXItc3BhY2luZzogLTAuMDA1ZW07XG4gICAgZm9udC1mYW1pbHk6IFwiU0YgUHJvIERpc3BsYXlcIiwgXCJTRiBQcm8gSWNvbnNcIiwgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBcIkhlbHZldGljYVwiLCBcIkFyaWFsXCIsIHNhbnMtc2VyaWY7XG4gICAgbWFyZ2luOiAwO1xufVxuXG4ubW90dG8ge1xuICAgIG1hcmdpbi1ib3R0b206IDAuNGVtO1xuICAgIGZvbnQtc2l6ZTogMjhweDtcbiAgICBsaW5lLWhlaWdodDogMS4xNDI4NjtcbiAgICBsZXR0ZXItc3BhY2luZzogMC4wMDdlbTtcbiAgICBmb250LWZhbWlseTogXCJTRiBQcm8gRGlzcGxheVwiLCBcIlNGIFBybyBJY29uc1wiLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiSGVsdmV0aWNhXCIsIFwiQXJpYWxcIiwgc2Fucy1zZXJpZjtcbn1cblxuLnN0YXJ0aW5nUHJpY2Uge1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICBsaW5lLWhlaWdodDogMS40NzA1OTtcbiAgICAvKiBmb250LXdlaWdodDogNDAwOyAqL1xuICAgIGxldHRlci1zcGFjaW5nOiAtMC4wMjJlbTtcbiAgICBmb250LWZhbWlseTogXCJTRiBQcm8gVGV4dFwiLCBcIlNGIFBybyBJY29uc1wiLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiSGVsdmV0aWNhXCIsIFwiQXJpYWxcIiwgc2Fucy1zZXJpZjtcbn1cblxuYnV0dG9uIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICBsaW5lLWhlaWdodDogMS4xNzY0ODtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGxldHRlci1zcGFjaW5nOiAtMC4wMjJlbTtcbiAgICBmb250LWZhbWlseTogXCJTRiBQcm8gVGV4dFwiLCBcIlNGIFBybyBJY29uc1wiLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiSGVsdmV0aWNhXCIsIFwiQXJpYWxcIiwgc2Fucy1zZXJpZjtcbiAgICBtaW4td2lkdGg6IDI4cHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxNnB4O1xuICAgIHBhZGRpbmctcmlnaHQ6IDE2cHg7XG4gICAgcGFkZGluZy10b3A6IDhweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogOHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDk4MHB4O1xuICAgIGJhY2tncm91bmQ6ICMwMDcxZTM7XG4gICAgY29sb3I6ICNmZmY7XG59XG5cbi5tYWluLWltYWdlIHtcbiAgICB3aWR0aDogMTA3MHB4O1xuICAgIGhlaWdodDogNDQ2cHg7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly9pLmliYi5jby9WSHZkQkhWL2ltYWMucG5nXCIpO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbn1cblxuI2Rpc2NvdmVyLW1vcmUge1xuICAgIGNvbG9yOiAjMDZjO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICBsaW5lLWhlaWdodDogMS40NzA1OTtcbiAgICBmb250LWZhbWlseTogXCJTRiBQcm8gVGV4dFwiLCBcIlNGIFBybyBJY29uc1wiLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiSGVsdmV0aWNhXCIsIFwiQXJpYWxcIiwgc2Fucy1zZXJpZjtcbiAgICBtYXJnaW4tdG9wOiAwLjhlbTtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzM1cHgpIGFuZCAobWF4LXdpZHRoOiAxMDY4cHgpIHtcbiAgICAucHJvZHVjdFRpdGxlIHtcbiAgICAgICAgZm9udC1zaXplOiA0MHB4O1xuICAgIH1cblxuICAgIC5tb3R0byB7XG4gICAgICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICB9XG5cbiAgICAubWFpbi1pbWFnZSB7XG4gICAgICAgIHdpZHRoOiA3MzVweDtcbiAgICAgICAgaGVpZ2h0OiAzMDhweDtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly9pLmliYi5jby9WSHZkQkhWL2ltYWMucG5nXCIpO1xuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDczNXB4IDMwOHB4O1xuICAgIH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzM0cHgpIHtcbiAgICAucHJvZHVjdFRpdGxlIHtcbiAgICAgICAgZm9udC1zaXplOiAzMnB4O1xuICAgIH1cblxuICAgIC5tb3R0byB7XG4gICAgICAgIGZvbnQtc2l6ZTogMjFweDtcbiAgICB9XG5cbiAgICAubWFpbi1pbWFnZSB7XG4gICAgICAgIHdpZHRoOiAzMjJweDtcbiAgICAgICAgaGVpZ2h0OiA0NzJweDtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiaHR0cHM6Ly9pLmliYi5jby9SejNaejlWL2ltYWMtU21hbGwucG5nXCIpO1xuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IDMyMnB4IDQ3MnB4O1xuICAgIH1cbn1cbiJdfQ== */</style><style>.product-container[_ngcontent-bmk-c32] {
+  background-color: #FAFAFA;
+}
+.product-container[_ngcontent-bmk-c32]   a[_ngcontent-bmk-c32] {
+  color: #1C77D1;
+}
+.product-container[_ngcontent-bmk-c32]   button[_ngcontent-bmk-c32] {
+  border-radius: 0;
+}
+.product-container[_ngcontent-bmk-c32]   button[_ngcontent-bmk-c32]:hover {
+  border-bottom: 1px solid black;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByb2R1Y3Qtc3BlY3MtdGFibGUuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx5QkFBQTtBQUNGO0FBQUU7RUFDRSxjQUFBO0FBRUo7QUFBRTtFQUNFLGdCQUFBO0FBRUo7QUFESTtFQUNFLDhCQUFBO0FBR04iLCJmaWxlIjoicHJvZHVjdC1zcGVjcy10YWJsZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9kdWN0LWNvbnRhaW5lcntcbiAgYmFja2dyb3VuZC1jb2xvcjogI0ZBRkFGQTtcbiAgYXtcbiAgICBjb2xvcjogIzFDNzdEMTtcbiAgfVxuICBidXR0b257XG4gICAgYm9yZGVyLXJhZGl1czogMDtcbiAgICAmOmhvdmVye1xuICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xuICAgIH1cbiAgfVxuXG59XG4iXX0= */</style><style>/* font style */
+.footer-font {
+  font-size: 0.75rem;
+}
+.footer-link {
+  text-decoration: none;
+}
+.footer-link:hover {
+  text-decoration: underline;
+  color: #515154;
+}
+/* structure style */
+.padding-left-1rem {
+  padding-left: 1rem;
+}
+.margin-xy-05rem {
+  margin: 0.5rem 0;
+}
+/* color style */
+.color-gray {
+  color: #86868B;
+}
+.color-darkgray {
+  color: #515154;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci1ub3Rlcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxlQUFBO0FBRUE7RUFDQyxrQkFBQTtBQUFEO0FBRUE7RUFDQyxxQkFBQTtBQUNEO0FBQUM7RUFDQywwQkFBQTtFQUNBLGNBQUE7QUFFRjtBQUVBLG9CQUFBO0FBRUE7RUFDQyxrQkFBQTtBQUFEO0FBRUE7RUFDQyxnQkFBQTtBQUNEO0FBRUEsZ0JBQUE7QUFFQTtFQUNDLGNBQUE7QUFBRDtBQUVBO0VBQ0MsY0FBQTtBQUNEIiwiZmlsZSI6ImZvb3Rlci1ub3Rlcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGZvbnQgc3R5bGUgKi9cblxuLmZvb3Rlci1mb250IHtcblx0Zm9udC1zaXplOiAwLjc1cmVtO1xufVxuLmZvb3Rlci1saW5rIHtcblx0dGV4dC1kZWNvcmF0aW9uOiBub25lO1xuXHQmOmhvdmVyIHtcblx0XHR0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcblx0XHRjb2xvcjogIzUxNTE1NDtcblx0fVxufVxuXG4vKiBzdHJ1Y3R1cmUgc3R5bGUgKi9cblxuLnBhZGRpbmctbGVmdC0xcmVtIHtcblx0cGFkZGluZy1sZWZ0OiAxcmVtO1xufVxuLm1hcmdpbi14eS0wNXJlbSB7XG5cdG1hcmdpbjogMC41cmVtIDA7XG59XG5cbi8qIGNvbG9yIHN0eWxlICovXG5cbi5jb2xvci1ncmF5IHtcblx0Y29sb3I6ICM4Njg2OEI7XG59XG4uY29sb3ItZGFya2dyYXkge1xuXHRjb2xvcjogIzUxNTE1NDtcbn0iXX0= */</style><style>.footer-text {
+  font-size: 0.75rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: #86868B;
+}
+
+.icon:hover {
+  color: #535353;
+}
+
+.color-lightgray {
+  color: lightgray;
+}
+
+.color-gray {
+  color: #86868B;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci1uYXYuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDQyxrQkFBQTtBQUNEOztBQUNBO0VBQ0MsaUJBQUE7RUFDQSxjQUFBO0FBRUQ7O0FBREM7RUFDQyxjQUFBO0FBR0Y7O0FBQUE7RUFDQyxnQkFBQTtBQUdEOztBQURBO0VBQ0MsY0FBQTtBQUlEIiwiZmlsZSI6ImZvb3Rlci1uYXYuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9vdGVyLXRleHQge1xuXHRmb250LXNpemU6IDAuNzVyZW07XG59XG4uaWNvbiB7XG5cdGZvbnQtc2l6ZTogMS4zcmVtO1xuXHRjb2xvcjogIzg2ODY4Qjtcblx0Jjpob3ZlciB7XG5cdFx0Y29sb3I6IHJnYig4MywgODMsIDgzKTtcblx0fVxufVxuLmNvbG9yLWxpZ2h0Z3JheSB7XG5cdGNvbG9yOiBsaWdodGdyYXk7XG59XG4uY29sb3ItZ3JheSB7XG5cdGNvbG9yOiAjODY4NjhCO1xufSJdfQ== */</style><style>.nav-footer[_ngcontent-bmk-c36] {
+  background-color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8em;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+.nav-footer[_ngcontent-bmk-c36]   ul[_ngcontent-bmk-c36] {
+  color: #1d1d1f;
+  padding: 5px 30px;
+  margin-top: 7px;
+}
+.nav-footer[_ngcontent-bmk-c36]   ul[_ngcontent-bmk-c36]   li[_ngcontent-bmk-c36] {
+  color: #515154;
+  list-style: none;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.nav-footer[_ngcontent-bmk-c36]   ul[_ngcontent-bmk-c36]   li[_ngcontent-bmk-c36]   a[_ngcontent-bmk-c36] {
+  text-decoration: none;
+  color: #515154;
+}
+.nav-footer[_ngcontent-bmk-c36]   ul[_ngcontent-bmk-c36]   li[_ngcontent-bmk-c36]   a[_ngcontent-bmk-c36]:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.nav-footer[_ngcontent-bmk-c36]   .container-1[_ngcontent-bmk-c36] {
+  display: flex;
+  flex-direction: column;
+}
+.nav-footer[_ngcontent-bmk-c36]   .container-2[_ngcontent-bmk-c36] {
+  display: flex;
+  flex-direction: column;
+}
+.nav-footer[_ngcontent-bmk-c36]   .container-3[_ngcontent-bmk-c36] {
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci1uYXYtbGlua3MuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBTUE7RUFDRSx5QkFBQTtFQUNBLHdJQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLDhCQUFBO0VBQ0EsdUJBQUE7RUFDQSxpQkFBQTtBQUxGO0FBT0U7RUFDRSxjQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0FBTEo7QUFPSTtFQUNFLGNBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7QUFMTjtBQU9NO0VBQ0UscUJBQUE7RUFDQSxjQUFBO0FBTFI7QUFPUTtFQUNFLHVDQUFBO1VBQUEsK0JBQUE7QUFMVjtBQVlFO0VBdENBLGFBQUE7RUFDQSxzQkFBQTtBQTZCRjtBQVlFO0VBMUNBLGFBQUE7RUFDQSxzQkFBQTtBQWlDRjtBQVlFO0VBOUNBLGFBQUE7RUFDQSxzQkFBQTtBQXFDRiIsImZpbGUiOiJmb290ZXItbmF2LWxpbmtzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQG1peGluIGZsZXhDb2x1bW4ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuXG5cbi5uYXYtZm9vdGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNztcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgUm9ib3RvLCBPeHlnZW4sIFVidW50dSwgQ2FudGFyZWxsLCAnT3BlbiBTYW5zJywgJ0hlbHZldGljYSBOZXVlJywgc2Fucy1zZXJpZjtcbiAgZm9udC1zaXplOiAwLjhlbTtcbiAgaGVpZ2h0OiA4MHZoO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICBwYWRkaW5nLXRvcDogMTVweDtcblxuICB1bCB7XG4gICAgY29sb3I6ICMxZDFkMWY7XG4gICAgcGFkZGluZzogNXB4IDMwcHg7XG4gICAgbWFyZ2luLXRvcDogN3B4O1xuXG4gICAgbGkge1xuICAgICAgY29sb3I6ICM1MTUxNTQ7XG4gICAgICBsaXN0LXN0eWxlOiBub25lO1xuICAgICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICAgIHBhZGRpbmctdG9wOiAxMHB4O1xuXG4gICAgICBhIHtcbiAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICBjb2xvcjogIzUxNTE1NDtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICB0ZXh0LWRlY29yYXRpb24tbGluZTogdW5kZXJsaW5lO1xuICAgICAgICB9XG5cbiAgICAgIH1cbiAgICB9XG4gIH1cblxuICAuY29udGFpbmVyLTEge1xuICAgIEBpbmNsdWRlIGZsZXhDb2x1bW4oKTtcbiAgfVxuXG4gIC5jb250YWluZXItMiB7XG4gICAgQGluY2x1ZGUgZmxleENvbHVtbigpO1xuICB9XG5cbiAgLmNvbnRhaW5lci0zIHtcbiAgICBAaW5jbHVkZSBmbGV4Q29sdW1uKCk7XG4gIH1cblxuXG59XG4iXX0= */</style><style>.copyright-container[_ngcontent-bmk-c37] {
+  background-color: #f5f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8em;
+  color: #86868B;
+  display: flex;
+  flex-direction: column;
+}
+.copyright-container[_ngcontent-bmk-c37]   a[_ngcontent-bmk-c37] {
+  text-decoration: none;
+  color: #515154;
+}
+.copyright-container[_ngcontent-bmk-c37]   a[_ngcontent-bmk-c37]:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.copyright-container[_ngcontent-bmk-c37]   .container-contacts[_ngcontent-bmk-c37] {
+  padding: 40px 20px;
+  padding-bottom: 0;
+}
+.copyright-container[_ngcontent-bmk-c37]   .container-contacts[_ngcontent-bmk-c37]   .copyright[_ngcontent-bmk-c37] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.copyright-container[_ngcontent-bmk-c37]   .container-contacts[_ngcontent-bmk-c37]   .blue-text[_ngcontent-bmk-c37] {
+  color: #0066CC;
+}
+.copyright-container[_ngcontent-bmk-c37]   .last-nav-footer[_ngcontent-bmk-c37] {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
+.copyright-container[_ngcontent-bmk-c37]   .last-nav-footer[_ngcontent-bmk-c37]   .last-nav-footer-element[_ngcontent-bmk-c37] {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvcHlyaWdodC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHlCQUFBO0VBQ0Esd0lBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0VBQ0Esc0JBQUE7QUFDRjtBQUdFO0VBQ0UscUJBQUE7RUFDQSxjQUFBO0FBREo7QUFHSTtFQUNFLHVDQUFBO1VBQUEsK0JBQUE7QUFETjtBQU1FO0VBQ0Usa0JBQUE7RUFDQSxpQkFBQTtBQUpKO0FBTUk7RUFDRSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw4QkFBQTtBQUpOO0FBT0k7RUFDRSxjQUFBO0FBTE47QUFXRTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7QUFUSjtBQVlJO0VBQ0UsZ0JBQUE7QUFWTiIsImZpbGUiOiJjb3B5cmlnaHQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29weXJpZ2h0LWNvbnRhaW5lciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmNWY1Zjc7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsIFJvYm90bywgT3h5Z2VuLCBVYnVudHUsIENhbnRhcmVsbCwgJ09wZW4gU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMC44ZW07XG4gIGNvbG9yOiAjODY4NjhCO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuXG5cblxuICBhIHtcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgY29sb3I6ICM1MTUxNTQ7XG5cbiAgICAmOmhvdmVyIHtcbiAgICAgIHRleHQtZGVjb3JhdGlvbi1saW5lOiB1bmRlcmxpbmU7XG4gICAgfVxuXG4gIH1cblxuICAuY29udGFpbmVyLWNvbnRhY3RzIHtcbiAgICBwYWRkaW5nOiA0MHB4IDIwcHg7XG4gICAgcGFkZGluZy1ib3R0b206IDA7XG5cbiAgICAuY29weXJpZ2h0IHtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIH1cblxuICAgIC5ibHVlLXRleHQge1xuICAgICAgY29sb3I6ICMwMDY2Q0M7XG4gICAgfVxuXG4gIH1cblxuXG4gIC5sYXN0LW5hdi1mb290ZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBwYWRkaW5nOiAwIDIwcHg7XG5cblxuICAgIC5sYXN0LW5hdi1mb290ZXItZWxlbWVudCB7XG4gICAgICBtYXJnaW4tbGVmdDogNXB4O1xuICAgIH1cbiAgfVxuXG59XG4iXX0= */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJwcm9kdWN0LXNpbmdsZS1zcGVjcy5jb21wb25lbnQuc2NzcyJ9 */</style><style>.product[_ngcontent-bmk-c30]   .circles[_ngcontent-bmk-c30]   .circle-color[_ngcontent-bmk-c30] {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  margin: 5px;
+}
+.product[_ngcontent-bmk-c30]   .circles[_ngcontent-bmk-c30]   .circle-color[_ngcontent-bmk-c30]:nth-child(1) {
+  background-color: #C7C8CA;
+}
+.product[_ngcontent-bmk-c30]   .circles[_ngcontent-bmk-c30]   .circle-color[_ngcontent-bmk-c30]:nth-child(2) {
+  background-color: #B1B2B7;
+}
+.product[_ngcontent-bmk-c30]   .circles[_ngcontent-bmk-c30]   .circle-color[_ngcontent-bmk-c30]:nth-child(3) {
+  background-color: #E3CCB4;
+}
+.product[_ngcontent-bmk-c30]   .buy-link[_ngcontent-bmk-c30] {
+  width: 100%;
+  border-bottom: 1px solid #d2d2d7;
+}
+.product[_ngcontent-bmk-c30]   .buy-link[_ngcontent-bmk-c30]   a[_ngcontent-bmk-c30] {
+  border-radius: 15px;
+  width: 50px;
+  height: 25px;
+  line-height: 10px;
+  background-color: #0577ED;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInVwcGVyLXNpbmdsZS1zcGVjcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFFSTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxXQUFBO0FBRE47QUFHSTtFQUNFLHlCQUFBO0FBRE47QUFHSTtFQUNFLHlCQUFBO0FBRE47QUFHSTtFQUNFLHlCQUFBO0FBRE47QUFNRTtFQVFFLFdBQUE7RUFDQSxnQ0FBQTtBQVhKO0FBR0k7RUFDRSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7RUFDQSx5QkFBQTtBQUROIiwiZmlsZSI6InVwcGVyLXNpbmdsZS1zcGVjcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9kdWN0e1xuICAuY2lyY2xlc3tcbiAgICAuY2lyY2xlLWNvbG9ye1xuICAgICAgd2lkdGg6MThweDtcbiAgICAgIGhlaWdodDogMThweDtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgICBtYXJnaW46IDVweFxuICAgIH1cbiAgICAuY2lyY2xlLWNvbG9yOm50aC1jaGlsZCgxKXtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICNDN0M4Q0E7XG4gICAgfVxuICAgIC5jaXJjbGUtY29sb3I6bnRoLWNoaWxkKDIpe1xuICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0IxQjJCNztcbiAgICB9XG4gICAgLmNpcmNsZS1jb2xvcjpudGgtY2hpbGQoMyl7XG4gICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRTNDQ0I0O1xuICAgIH1cbiAgfVxuXG5cbiAgLmJ1eS1saW5re1xuICAgIGF7XG4gICAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICAgICAgd2lkdGg6IDUwcHg7XG4gICAgICBoZWlnaHQ6IDI1cHg7XG4gICAgICBsaW5lLWhlaWdodDogMTBweDtcbiAgICAgIGJhY2tncm91bmQtY29sb3I6ICMwNTc3RUQ7XG4gICAgfVxuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZDJkMmQ3O1xuICB9XG59XG4iXX0= */</style><style>.list-specs[_ngcontent-bmk-c29] {
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d2d2d7;
+}
+.list-specs[_ngcontent-bmk-c29]   .specific-column[_ngcontent-bmk-c29] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.list-specs[_ngcontent-bmk-c29]   .specific-column[_ngcontent-bmk-c29]   p[_ngcontent-bmk-c29]:nth-child(3) {
+  font-size: 14px;
+  margin: 0 auto;
+}
+.list-specs[_ngcontent-bmk-c29]   .specific-column[_ngcontent-bmk-c29]   p[_ngcontent-bmk-c29]:nth-child(4) {
+  font-size: 14px;
+  color: #86868b;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxvd2VyLXNpbmdsZS1zcGVjcy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQTtFQUNFLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0Esb0JBQUE7RUFDQSxnQ0FBQTtBQUZGO0FBSUU7RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7QUFGSjtBQUlJO0VBQ0UsZUFoQmE7RUFpQmIsY0FBQTtBQUZOO0FBSUk7RUFDRSxlQXBCYTtFQXFCYixjQXRCbUI7QUFvQnpCIiwiZmlsZSI6Imxvd2VyLXNpbmdsZS1zcGVjcy5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiR0aXRsZS1kZXNjcmlwdGlvbi1jb2xvcjojODY4NjhiO1xuJHRpdGxlLXNwZWNzLXNpemU6IDE0cHg7XG5cbi5saXN0LXNwZWNze1xuICBoZWlnaHQ6IDEwMCU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLXRvcDogMjBweDtcbiAgcGFkZGluZy1ib3R0b206IDQwcHg7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZDJkMmQ3O1xuXG4gIC5zcGVjaWZpYy1jb2x1bW57XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luOiAxMHB4O1xuXG4gICAgcDpudGgtY2hpbGQoMyl7XG4gICAgICBmb250LXNpemU6ICR0aXRsZS1zcGVjcy1zaXplO1xuICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgfVxuICAgIHA6bnRoLWNoaWxkKDQpe1xuICAgICAgZm9udC1zaXplOiAkdGl0bGUtc3BlY3Mtc2l6ZTtcbiAgICAgIGNvbG9yOiAkdGl0bGUtZGVzY3JpcHRpb24tY29sb3I7XG4gICAgfVxuICB9XG5cblxufVxuIl19 */</style><link href="./AppleAngular_files/css2" rel="stylesheet"><style>@media print {#ghostery-tracker-tally {display:none !important}}</style></head>
+<body cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed=""><span id="warning-container"><i data-reactroot=""></i></span>
+  <app-root _nghost-bmk-c40="" ng-version="12.2.7"><app-mac-home-container _ngcontent-bmk-c40="" _nghost-bmk-c39=""><app-header-container _ngcontent-bmk-c39="" _nghost-bmk-c27="" ng-reflect-discount="true" ng-reflect-discount-text="Risparmia su un Mac per l’univ" ng-reflect-url="https://www.apple.com/it-edu/s"><app-header-navbar _ngcontent-bmk-c27="" _nghost-bmk-c23=""><nav _ngcontent-bmk-c23="" class="first-nav"><li _ngcontent-bmk-c23="" class="main-nav-li"><fa-icon _ngcontent-bmk-c23="" class="ng-fa-icon nav-icon" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" class="svg-inline--fa fa-apple fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg></fa-icon></li><li _ngcontent-bmk-c23="" class="main-nav-li">Store</li><li _ngcontent-bmk-c23="" class="main-nav-li">Mac</li><li _ngcontent-bmk-c23="" class="main-nav-li">iPad</li><li _ngcontent-bmk-c23="" class="main-nav-li">iPhone</li><li _ngcontent-bmk-c23="" class="main-nav-li">Watch</li><li _ngcontent-bmk-c23="" class="main-nav-li">TV</li><li _ngcontent-bmk-c23="" class="main-nav-li">Music</li><li _ngcontent-bmk-c23="" class="main-nav-li">Support</li><li _ngcontent-bmk-c23="" class="main-nav-li"><fa-icon _ngcontent-bmk-c23="" class="ng-fa-icon nav-icon" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></fa-icon></li><li _ngcontent-bmk-c23="" class="main-nav-li"><fa-icon _ngcontent-bmk-c23="" class="ng-fa-icon nav-icon" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-bag" class="svg-inline--fa fa-shopping-bag fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg></fa-icon></li></nav><nav _ngcontent-bmk-c23="" class="mob-nav"><li _ngcontent-bmk-c23="" class="mob-nav-li"><fa-icon _ngcontent-bmk-c23="" class="ng-fa-icon nav-icon" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="apple" class="svg-inline--fa fa-apple fa-w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg></fa-icon></li><li _ngcontent-bmk-c23="" class="mob-nav-li"><fa-icon _ngcontent-bmk-c23="" class="ng-fa-icon nav-icon" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></fa-icon></li><li _ngcontent-bmk-c23="" class="mob-nav-li"><fa-icon _ngcontent-bmk-c23="" class="ng-fa-icon nav-icon" ng-reflect-icon="[object Object]"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-bag" class="svg-inline--fa fa-shopping-bag fa-w-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path></svg></fa-icon></li></nav></app-header-navbar><app-header-device _ngcontent-bmk-c27="" _nghost-bmk-c25=""><app-single-device-header _ngcontent-bmk-c25="" _nghost-bmk-c24="" ng-reflect-macs="[object Object],[object Object"><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-1.svg"><span _ngcontent-bmk-c24="" class="caption">MacBook Air</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-2.svg"><span _ngcontent-bmk-c24="" class="caption">MacBook Pro 13”</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-3.svg"><span _ngcontent-bmk-c24="" class="caption">MacBook Pro 16”</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-4.svg"><span _ngcontent-bmk-c24="" class="caption">iMac 24”</span><span _ngcontent-bmk-c24="" class="new">New</span><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-5.svg"><span _ngcontent-bmk-c24="" class="caption">iMac 27”</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-6.svg"><span _ngcontent-bmk-c24="" class="caption">Mac Pro</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-7.svg"><span _ngcontent-bmk-c24="" class="caption">Mac mini</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-8.svg"><span _ngcontent-bmk-c24="" class="caption">Compare</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-9.svg"><span _ngcontent-bmk-c24="" class="caption">Pro Display XDR</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-10.svg"><span _ngcontent-bmk-c24="" class="caption">Accessories</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><nav _ngcontent-bmk-c24="" class="single-device-container"><div _ngcontent-bmk-c24="" class="single-device"><img _ngcontent-bmk-c24="" alt="" srcset="" src="./AppleAngular_files/mac-11.svg"><span _ngcontent-bmk-c24="" class="caption">Big Sur</span><!--bindings={
+  "ng-reflect-ng-if": "false"
+}--></div></nav><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></app-single-device-header></app-header-device><app-discount-device _ngcontent-bmk-c27="" _nghost-bmk-c26="" ng-reflect-discount="true" ng-reflect-discount-text="Risparmia su un Mac per l’univ" ng-reflect-url="https://www.apple.com/it-edu/s"><div _ngcontent-bmk-c26="" class="container-fluid text-center d-flex justify-content-center"><div _ngcontent-bmk-c26="" id="discount-line"> Risparmia su un Mac per l’università con i prezzi Education. Avrai gli AirPods.* L’offerta termina l’11/10. <a _ngcontent-bmk-c26="" class="text-decoration-none" href="https://www.apple.com/it-edu/shop/back-to-school">Acquista ora &gt;</a></div><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--></div></app-discount-device></app-header-container><app-mac-main-container _ngcontent-bmk-c39="" _nghost-bmk-c33=""><app-full-size-card _ngcontent-bmk-c33="" _nghost-bmk-c28="" ng-reflect-is-new="true" ng-reflect-product-title="iMac" ng-reflect-motto="Viva il colore." ng-reflect-starting-price="1499" ng-reflect-url="https://www.apple.com/it/shop/"><div _ngcontent-bmk-c28="" class="container-fluid"><div _ngcontent-bmk-c28="" class="text-button text-center"><p _ngcontent-bmk-c28="" class="new">Novità</p><!--bindings={
+  "ng-reflect-ng-if": "true"
+}--><p _ngcontent-bmk-c28="" class="productTitle"> iMac</p><p _ngcontent-bmk-c28="" class="motto"> Viva il colore.</p><p _ngcontent-bmk-c28="" class="startingPrice"> A partire da €1499</p><a _ngcontent-bmk-c28="" href="https://www.apple.com/it/shop/buy-mac/imac"><button _ngcontent-bmk-c28="" class="btn btn-primary rounded-pill">Acquista</button></a><p _ngcontent-bmk-c28="" id="discover-more"><a _ngcontent-bmk-c28="" class="text-decoration-none" href="https://www.apple.com/it/shop/buy-mac/imac">Scopri di più &gt;</a></p></div><div _ngcontent-bmk-c28="" class="container-fluid main-image mt-5"></div></div></app-full-size-card><app-product-specs-table _ngcontent-bmk-c33="" _nghost-bmk-c32="" ng-reflect-product-mac="[object Object],[object Object"><div _ngcontent-bmk-c32="" class="container-fluid pt-5 pb-5 product-container text-center"><h1 _ngcontent-bmk-c32=""><b _ngcontent-bmk-c32="">Which Mac is right for you?</b></h1><a _ngcontent-bmk-c32="" href="http://localhost:4200/">Compare all mac models &gt;</a><div _ngcontent-bmk-c32="" class="switch p-3"><button _ngcontent-bmk-c32="" class="btn">Notebook</button><button _ngcontent-bmk-c32="" class="btn">Desktop</button></div><div _ngcontent-bmk-c32="" class="container d-flex"><app-product-single-specs _ngcontent-bmk-c32="" _nghost-bmk-c31="" ng-reflect-products="[object Object],[object Object"><app-upper-single-specs _ngcontent-bmk-c31="" class="d-flex col-sm-2" _nghost-bmk-c30="" ng-reflect-product="[object Object],[object Object"><div _ngcontent-bmk-c30="" class="container"><a _ngcontent-bmk-c30="" href="http://localhost:4200/"><img _ngcontent-bmk-c30="" alt="" src="./AppleAngular_files/macbook-air-specs.png"></a><div _ngcontent-bmk-c30="" class="d-flex flex-column align-items-center"><h4 _ngcontent-bmk-c30="">MacBook Air</h4><p _ngcontent-bmk-c30=""><span _ngcontent-bmk-c30="">from $999</span></p><div _ngcontent-bmk-c30="" class="d-flex justify-content-center circles mb-3"><div _ngcontent-bmk-c30="" class="circle-color"></div><div _ngcontent-bmk-c30="" class="circle-color"></div><div _ngcontent-bmk-c30="" class="circle-color"></div></div><div _ngcontent-bmk-c30="" class="pb-4 buy-link"><a _ngcontent-bmk-c30="" href="http://localhost:4200/" class="btn btn-primary"> Buy </a></div></div></div><div _ngcontent-bmk-c30="" class="container product"><a _ngcontent-bmk-c30="" href="http://localhost:4200/"><img _ngcontent-bmk-c30="" alt="" src="./AppleAngular_files/macbook-pro13-specs.png"></a><div _ngcontent-bmk-c30="" class="d-flex flex-column align-items-center"><h4 _ngcontent-bmk-c30="">MacBook Pro 13 </h4><p _ngcontent-bmk-c30=""><span _ngcontent-bmk-c30="">from $1299</span></p><div _ngcontent-bmk-c30="" class="d-flex justify-content-center circles mb-3"><div _ngcontent-bmk-c30="" class="circle-color"></div><div _ngcontent-bmk-c30="" class="circle-color"></div><div _ngcontent-bmk-c30="" class="circle-color"></div></div><div _ngcontent-bmk-c30="" class="pb-4 buy-link"><a _ngcontent-bmk-c30="" href="http://localhost:4200/" class="btn btn-primary"> Buy </a></div></div></div><div _ngcontent-bmk-c30="" class="container product"><a _ngcontent-bmk-c30="" href="http://localhost:4200/"><img _ngcontent-bmk-c30="" alt="" src="./AppleAngular_files/macbook-pro16-specs.png"></a><div _ngcontent-bmk-c30="" class="d-flex flex-column align-items-center"><h4 _ngcontent-bmk-c30="">MacBook Pro 16</h4><p _ngcontent-bmk-c30=""><span _ngcontent-bmk-c30="">from $2399</span></p><div _ngcontent-bmk-c30="" class="d-flex justify-content-center circles mb-3"><div _ngcontent-bmk-c30="" class="circle-color"></div><div _ngcontent-bmk-c30="" class="circle-color"></div><div _ngcontent-bmk-c30="" class="circle-color"></div></div><div _ngcontent-bmk-c30="" class="pb-4 buy-link"><a _ngcontent-bmk-c30="" href="http://localhost:4200/" class="btn btn-primary"> Buy </a></div></div></div><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--><app-lower-single-specs _ngcontent-bmk-c30="" class="d-flex flex-column justify-content-center" _nghost-bmk-c29=""><div _ngcontent-bmk-c29="" class="container list-specs d-flex flex-column align-items-center"><!--container--></div></app-lower-single-specs></app-upper-single-specs></app-product-single-specs><app-product-single-specs _ngcontent-bmk-c32="" _nghost-bmk-c31=""><app-upper-single-specs _ngcontent-bmk-c31="" class="col-3" _nghost-bmk-c30=""><!--container--><app-lower-single-specs _ngcontent-bmk-c30="" class="d-flex flex-column justify-content-center" _nghost-bmk-c29=""><div _ngcontent-bmk-c29="" class="container list-specs d-flex flex-column align-items-center"><!--container--></div></app-lower-single-specs></app-upper-single-specs></app-product-single-specs><app-product-single-specs _ngcontent-bmk-c32="" _nghost-bmk-c31=""><app-upper-single-specs _ngcontent-bmk-c31="" class="col-3" _nghost-bmk-c30=""><!--container--><app-lower-single-specs _ngcontent-bmk-c30="" class="d-flex flex-column justify-content-center" _nghost-bmk-c29=""><div _ngcontent-bmk-c29="" class="container list-specs d-flex flex-column align-items-center"><!--container--></div></app-lower-single-specs></app-upper-single-specs></app-product-single-specs><!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}--></div></div></app-product-specs-table></app-mac-main-container><app-footer-container _ngcontent-bmk-c39="" _nghost-bmk-c38=""><div _ngcontent-bmk-c38="" class="container footer-background"><app-footer-notes _ngcontent-bmk-c38=""><div class="footer-font color-gray"><p>* Offerta riservata ai clienti idonei che acquistano un Mac o un iPad inclusi nell’iniziativa insieme a un paio di AirPods idonei attraverso i canali aderenti. Un solo prodotto in promozione per ciascun Mac o iPad incluso nell’iniziativa e per ciascun cliente idoneo. Offerta soggetta a disponibilità. Fino a esaurimento scorte. L’offerta è soggetta a <a href="http://localhost:4200/#" class="footer-link color-darkgray">termini e condizioni.</a></p><ol class="padding-left-1rem"><!--container--></ol><hr class="color-gray"></div></app-footer-notes><app-footer-nav _ngcontent-bmk-c38=""><div class="footer-text color-gray"><a href="http://localhost:4200/#" class="icon"><fa-icon class="ng-fa-icon"></fa-icon></a><span></span></div></app-footer-nav><app-footer-nav-links _ngcontent-bmk-c38="" _nghost-bmk-c36=""><div _ngcontent-bmk-c36="" class="nav-footer"><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Scopri e acquista</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Mac</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">iPad</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">iPhone</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Watch</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">TV</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Music</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">AirPods</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">iPod touch</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">AirTag</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Accessori</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Carte regalo</a></li></ul><div _ngcontent-bmk-c36="" class="container-1"><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Servizi</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Music</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple TV+</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Fitness+</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Arcade</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">iCloud</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple One</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Pay</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Books</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Podcast</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">App Store</a></li></ul><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Account</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Gestisci il tuo ID Apple</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Account Apple Store</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Cloud.com</a></li></ul></div><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Apple Store</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Trova uno Store</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Acquista online</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Genius Bar</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Today at Apple</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Campo Estivo Apple</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">L'app Apple Store</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Ricondizionati e fine serie</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Finanziamenti</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple Trade In</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Stato dell'ordine</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Assistenza agli acquisti</a></li></ul><div _ngcontent-bmk-c36="" class="container-2"><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Business</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple per il business</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Acquisti per le aziende</a></li></ul><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Education</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple nell'istruzione</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Acquisti per l'università</a></li></ul><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Per la salute</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Apple e la salute</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Salute su Apple Watch</a></li></ul></div><div _ngcontent-bmk-c36="" class="container-3"><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">I valori di Apple</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Accessibilità</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Ambiente</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Privacy</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Responsabilità dei fornitori</a></li></ul><ul _ngcontent-bmk-c36=""><b _ngcontent-bmk-c36="">Info su Apple</b><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Newsroom</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Leadership Apple</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Opportunità di lavoro</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Garanzia</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Investitori</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Etica e rispetto delle norme</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Eventi</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Posti di lavoro in Europa</a></li><li _ngcontent-bmk-c36=""><a _ngcontent-bmk-c36="" href="http://localhost:4200/#">Contatti</a></li></ul></div></div></app-footer-nav-links><app-copyright _ngcontent-bmk-c38="" _nghost-bmk-c37=""><div _ngcontent-bmk-c37="" class="copyright-container"><div _ngcontent-bmk-c37="" class="container-contacts"><p _ngcontent-bmk-c37="">Altri modi per acquistare: <a _ngcontent-bmk-c37="" href="http://localhost:4200/#" class="blue-text">trova l’Apple Store</a> o <a _ngcontent-bmk-c37="" href="http://localhost:4200/#" class="blue-text">il rivenditore</a> più vicino. O chiama il numero 800 554 533.</p><hr _ngcontent-bmk-c37=""><div _ngcontent-bmk-c37="" class="copyright"><p _ngcontent-bmk-c37="">Copyright © 2021 Apple Inc. Tutti i diritti riservati.</p><p _ngcontent-bmk-c37="">Italia</p></div></div><div _ngcontent-bmk-c37="" class="last-nav-footer"><p _ngcontent-bmk-c37=""><a _ngcontent-bmk-c37="" href="http://localhost:4200/#">Norme sulla privacy |</a></p><p _ngcontent-bmk-c37="" class="last-nav-footer-element"><a _ngcontent-bmk-c37="" href="http://localhost:4200/#">Utilizzo dei cookie |</a></p><p _ngcontent-bmk-c37="" class="last-nav-footer-element"><a _ngcontent-bmk-c37="" href="http://localhost:4200/#">condizioni d'uso |</a></p><p _ngcontent-bmk-c37="" class="last-nav-footer-element"><a _ngcontent-bmk-c37="" href="http://localhost:4200/#">Vendite e rimborsi |</a></p><p _ngcontent-bmk-c37="" class="last-nav-footer-element"><a _ngcontent-bmk-c37="" href="http://localhost:4200/#">Note Legali |</a></p><p _ngcontent-bmk-c37="" class="last-nav-footer-element"><a _ngcontent-bmk-c37="" href="http://localhost:4200/#">Mappa del sito</a></p></div></div></app-copyright></div></app-footer-container></app-mac-home-container></app-root>
+<script src="./AppleAngular_files/runtime.js" defer=""></script><script src="./AppleAngular_files/polyfills.js" defer=""></script><script src="./AppleAngular_files/vendor.js" defer=""></script><script src="./AppleAngular_files/main.js" defer=""></script>
+
+<div id="wot-new-assistant-container"><div data-reactroot=""></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

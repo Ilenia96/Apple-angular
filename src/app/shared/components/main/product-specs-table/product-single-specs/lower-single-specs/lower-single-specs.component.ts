@@ -8,11 +8,12 @@ import { IProductMac } from 'src/app/models/Products-mac';
 })
 export class LowerSingleSpecsComponent implements OnInit {
 
-  @Input () product!: IProductMac;
+  @Input () producta!: IProductMac;
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
