@@ -1,12 +1,12 @@
 <div class="nav-footer">
 
   <ul><b>Scopri e acquista</b>
-    <li *ngFor="let buyproduct of buyproducts"><a href="#">{{buyproduct.name}}</a></li>
+    <li *ngFor="let buyproduct of buyproducts"><a [routerLink]="buyproduct.url">{{buyproduct.name}}</a></li>
   </ul>
 
   <div class="flex-column">
     <ul><b>Servizi</b>
-      <li *ngFor="let aService of aServices"><a [routerLink]="aService.url">{{aService.name}}</a></li>
+      <li *ngFor="let aService of aServices"><a href="#">{{aService.name}}</a></li>
 
     </ul>
 
