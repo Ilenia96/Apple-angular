@@ -1,0 +1,19 @@
+{
+    "header": [
+        {
+            "headerNavbar": {
+               "discountDevice" : {
+                   "discount": "true"
+               }
+            }
+        }
+    ],
+
+    "main": [
+
+    ],
+
+    "footer": [
+
+    ]
+}
