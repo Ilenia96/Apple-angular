@@ -3,7 +3,9 @@
         {
             "headerNavbar": {
                "discountDevice" : {
-                   "discount": "true"
+                   "discount": "true",
+                   "discountText": "Risparmia su un Mac per l’università con i prezzi Education. Avrai gli AirPods.* L’offerta termina l’11/10",
+                   "url": "'https://www.apple.com/it-edu/shop/back-to-school'"
                }
             }
         }

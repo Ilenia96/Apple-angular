@@ -3,9 +3,11 @@ export interface IHeader {
 }
 
 export interface IHeaderNavbar {
-    discountDevice: discountDevice;
+    discountDevice: IdiscountDevice;
 }
 
-export interface discountDevice {
+export interface IdiscountDevice {
     "discount": boolean;
+    "discountText": string;
+    "url": string;
 }

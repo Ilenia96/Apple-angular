@@ -15,9 +15,9 @@ export class MacHomeContainerComponent implements OnInit {
   ngOnInit(): void {
     this.macDataService.getHeader().subscribe(data => {
       this.headerNavbar = data[0].headerNavbar;
-      console.log(`${JSON.stringify(this.headerNavbar)}`);
-      console.log(`${JSON.stringify(this.headerNavbar.discountDevice)}`);
-      console.log(this.headerNavbar.discountDevice.discount)
+      // console.log(`${JSON.stringify(this.headerNavbar)}`);
+      // console.log(`${JSON.stringify(this.headerNavbar.discountDevice)}`);
+      // console.log(this.headerNavbar.discountDevice.discount)
     });
   }
 
