@@ -15,8 +15,8 @@ export class MacDataService {
 
     }
 
-    getHeader(): Observable<IHeaderNavbar[]> {
-        return this.httpClient.get<IHeaderNavbar[]>('http://localhost:3000/header');
+    getHeader(): Observable<IHeader[]> {
+        return this.httpClient.get<IHeader[]>('http://localhost:3000/header');
     }
 
     getMain(): Observable<any> {

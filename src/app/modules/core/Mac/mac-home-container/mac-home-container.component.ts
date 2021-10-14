@@ -10,12 +10,14 @@ import { MacDataService } from 'src/app/shared/services/MacDataService';
 export class MacHomeContainerComponent implements OnInit {
   constructor(private macDataService : MacDataService) { }
 
-  header !: IHeaderNavbar; 
+  headerNavbar !: IHeaderNavbar; 
 
   ngOnInit(): void {
     this.macDataService.getHeader().subscribe(data => {
-      this.header = data[0];
-      console.log(`${(this.header.discountDevice.discount)}`);
+      this.headerNavbar = data[0].headerNavbar;
+      console.log(`${JSON.stringify(this.headerNavbar)}`);
+      console.log(`${JSON.stringify(this.headerNavbar.discountDevice)}`);
+      console.log(this.headerNavbar.discountDevice.discount)
     });
   }
 
