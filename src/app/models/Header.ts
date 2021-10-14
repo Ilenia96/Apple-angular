@@ -7,7 +7,7 @@ export interface IHeaderNavbar {
 }
 
 export interface IdiscountDevice {
-    "discount": boolean;
-    "discountText": string;
-    "url": string;
+    discount: boolean;
+    discountText: string;
+    url: string;
 }

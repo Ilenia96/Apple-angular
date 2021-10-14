@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IFullsizeCard } from 'src/app/models/Main';
 import { IProductMac } from 'src/app/models/Products-mac';
+import { MacDataService } from 'src/app/shared/services/MacDataService';
 
 @Component({
   selector: 'app-mac-main-container',
@@ -8,9 +10,14 @@ import { IProductMac } from 'src/app/models/Products-mac';
 })
 export class MacMainContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private macDataService : MacDataService) { }
+
+  fullSizeCard !: IFullsizeCard;
 
   ngOnInit(): void {
+    this.macDataService.getMain().subscribe(data => {
+      this.fullSizeCard = data[0].fullSizeCard;
+    })
   }
   productMac: IProductMac[] = [
     {

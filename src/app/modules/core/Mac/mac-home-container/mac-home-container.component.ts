@@ -20,5 +20,4 @@ export class MacHomeContainerComponent implements OnInit {
       // console.log(this.headerNavbar.discountDevice.discount)
     });
   }
-
 }

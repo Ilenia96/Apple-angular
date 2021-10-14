@@ -12,7 +12,17 @@
     ],
 
     "main": [
-
+        {
+            "fullSizeCard": {
+                "isNew": "true",
+                "productTitle": "iMac",
+                "motto": "Viva il colore.",
+                "startingPrice": "1499",
+                "buyUrl": "https://www.apple.com/it/shop/buy-mac/imac",
+                "discoverUrl": "https://www.apple.com/it/imac-24/",
+                "picUrl": "/assets/img/Mac/main/full-size-big-Macs.png"
+            }
+        }
     ],
 
     "footer": [
