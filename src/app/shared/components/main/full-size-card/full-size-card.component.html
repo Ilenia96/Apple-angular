@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <div class="text-button text-center">
-        <p *ngIf="isNew" class="new">Novità</p>
-        <p class="productTitle"> {{productTitle}}</p>
-        <p class="motto"> {{motto}}</p>
-        <p class="startingPrice"> A partire da €{{startingPrice}}</p>
-        <a [href]=url><button class="btn btn-primary rounded-pill">Acquista</button></a>
-        <p id="discover-more"><a class="text-decoration-none" [href]=url>Scopri di più ></a></p>
+        <p *ngIf="fullSizeCard.isNew" class="new">Novità</p>
+        <p class="productTitle"> {{fullSizeCard.productTitle}}</p>
+        <p class="motto"> {{fullSizeCard.motto}}</p>
+        <p class="startingPrice"> A partire da €{{fullSizeCard.startingPrice}}</p>
+        <a [href]=fullSizeCard.buyUrl ><button class="btn btn-primary rounded-pill">Acquista</button></a>
+        <p id="discover-more"><a class="text-decoration-none" [href]=fullSizeCard.discoverUrl>Scopri di più ></a></p>
     </div>
-    <div class="container-fluid main-image mt-5">
-
+    <div class="container-fluid p-0 d-flex justify-content-center mt-5">
+        <img [src]=fullSizeCard.picUrl class="main-image" alt="">
     </div>
 </div>
