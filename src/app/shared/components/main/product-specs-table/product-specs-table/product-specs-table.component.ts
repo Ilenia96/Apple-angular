@@ -8,7 +8,7 @@ import { IProductMac } from 'src/app/models/Products-mac';
 })
 export class ProductSpecsTableComponent implements OnInit {
 
-@Input () productx!: IProductMac[];
+@Input () products: IProductMac[]=[];
 
   constructor() { }
 
