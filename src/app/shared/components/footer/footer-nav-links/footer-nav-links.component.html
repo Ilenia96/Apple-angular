@@ -1,5 +1,4 @@
-<div class="nav-footer">
-
+<div class="nav-footer d-none d-md-flex">
   <ul><b>Scopri e acquista</b>
     <li *ngFor="let buyproduct of buyproducts"><a [routerLink]="buyproduct.url">{{buyproduct.name}}</a></li>
   </ul>
@@ -30,7 +29,7 @@
     </ul>
 
     <ul><b>Per la salute</b>
-      <li *ngFor="let gesund of gesunds "><a href="#">{{gesund.name}}</a></li>
+      <li *ngFor="let health of healths"><a href="#">{{health.name}}</a></li>
     </ul>
   </div>
 
@@ -44,4 +43,49 @@
       <li *ngFor="let info of infos "><a href="#">{{info.name}}</a></li>
     </ul>
   </div>
+
+</div>
+
+
+<!--mobile version-->
+
+
+<div class="d-block d-md-none mobile">
+  <hr>
+  <ul><b>Scopri e acquista</b>
+    <li *ngFor="let buyproduct of buyproducts"><a [routerLink]="buyproduct.url">{{buyproduct.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Servizi</b>
+    <li *ngFor="let aService of aServices"><a href="#">{{aService.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Account</b>
+    <li *ngFor="let account of accounts "><a href="#">{{account.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Apple Store</b>
+    <li *ngFor="let aStore of aStores "><a href="#">{{aStore.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Business</b>
+    <li *ngFor="let company of companies "><a href="#">{{company.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Education</b>
+    <li *ngFor="let education of educations "><a href="#">{{education.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Per la salute</b>
+    <li *ngFor="let health of healths "><a href="#">{{health.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>I valori di Apple</b>
+    <li *ngFor="let applevalue of applevalues "><a href="#">{{applevalue.name}}</a></li>
+  </ul>
+  <hr>
+  <ul><b>Info su Apple</b>
+    <li *ngFor="let info of infos "><a href="#">{{info.name}}</a></li>
+  </ul>
+  <hr>
 </div>
