@@ -1,14 +1,16 @@
-<div class="row gx-5 d-flex justify-content-around">
-
-  <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-between flex-column align-items-center">
-    <app-upper-single-specs [productup]="singleprod"></app-upper-single-specs>
+<div class="flex-column justify-content-center">
+  <app-upper-single-specs [productup]="singleprod"></app-upper-single-specs>
+  <div class=" mt-3">
+    <app-lower-single-specs *ngFor="let specs of singleprod.specification" [specs]="specs"></app-lower-single-specs>
   </div>
 
-<div class=" mt-3 flex-column align-items-center linea">
-  <app-lower-single-specs *ngFor="let specs of singleprod.specification" [specs]="specs"></app-lower-single-specs>
 </div>
 
-</div>
+
+
+
+
+
 
 
 
