@@ -1,6 +1,13 @@
+<div class="flex-column justify-content-center">
+  <app-upper-single-specs [productup]="singleprod"></app-upper-single-specs>
+  <div class=" mt-3">
+    <app-lower-single-specs *ngFor="let specs of singleprod.specification" [specs]="specs"></app-lower-single-specs>
+  </div>
+
+</div>
 
 
-    <app-upper-single-specs class="d-flex flex-column align-items-center" *ngFor="let product of productz" [product]="product"></app-upper-single-specs>
+
 
 
 

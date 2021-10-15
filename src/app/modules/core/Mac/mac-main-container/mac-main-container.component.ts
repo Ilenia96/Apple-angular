@@ -19,7 +19,7 @@ export class MacMainContainerComponent implements OnInit {
       this.fullSizeCard = data[0].fullSizeCard;
     })
   }
-  productMac: IProductMac[] = [
+   productMac: IProductMac[] = [
     {
       id: '1',
       imgUrl: '/assets/img/Mac/main/macbook-air-specs.png',
@@ -76,7 +76,7 @@ export class MacMainContainerComponent implements OnInit {
     },
 
     {
-      id: '1',
+      id: '2',
       imgUrl: '/assets/img/Mac/main/macbook-pro13-specs.png',
       title: 'MacBook Pro 13 ',
       color: 'grey | dark grey',
@@ -132,7 +132,7 @@ export class MacMainContainerComponent implements OnInit {
     },
 
     {
-      id: '1',
+      id: '3',
       imgUrl: '/assets/img/Mac/main/macbook-pro16-specs.png',
       title: 'MacBook Pro 16',
       color: 'grey | dark grey',

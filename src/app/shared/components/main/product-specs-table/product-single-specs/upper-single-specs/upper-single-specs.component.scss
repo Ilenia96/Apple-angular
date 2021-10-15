@@ -1,3 +1,11 @@
+@import 'src/assets/SCSS/mixins.scss';
+h4{
+  @include font-family-display;
+  font-weight: 600 ;
+}
+p{
+  @include font-family-text;
+}
 .circles{
   .circle-color{
     width:18px;
@@ -28,7 +36,32 @@
     line-height: 10px;
     background-color: #0577ED;
   }
-  width: 250px;
+
   border-bottom: 1px solid #d2d2d7;
 }
 
+.mac-bck{
+  background-position: center;
+  width: 276px;
+  height: 167px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1068px) {
+  .mac-bck{
+    background-position: center;
+    width: 212px;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-size: 212px 125px;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .mac-bck{
+    background-position: center;
+    width: 138px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: 138px ;
+  }
+}
