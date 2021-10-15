@@ -1,15 +1,28 @@
-<div class="container-fluid pt-5 pb-5 product-container text-center">
-  <h1><b>Which Mac is right for you?</b></h1>
+<div class="container-fluid pt-5 pb-5 product-container text-center justify-content-center">
+<div class="container">
+  <h1>Which Mac is right for you?</h1>
   <a href="">Compare all mac models ></a>
 
   <div class="switch p-3">
     <button class="btn">Notebook</button>
-    <button class="btn">Desktop</button>
+    <button class="btn disabled">Desktop</button>
+  </div>
+</div>
+
+
+  <!-- <app-product-single-specs class="container d-flex justify-content-around" [singleprod]="products"></app-product-single-specs> -->
+<div class="container">
+  <div class="row d-flex flex-row justify-content-around">
+    <div class="col col-md-10 d-flex">
+      <app-product-single-specs *ngFor="let product of products" [singleprod]="product"></app-product-single-specs>
+    </div>
   </div>
 
-  <div class="container d-flex justify-content-center">
-    <app-product-single-specs class="d-flex col-9" [productz]="productx"></app-product-single-specs>
-  </div>
+
+</div>
+
+
+
 
 
 </div>

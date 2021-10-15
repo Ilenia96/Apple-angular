@@ -1,19 +1,20 @@
 
+
   <a href="" class="mb-4">
-    <img src="{{product.imgUrl}}" alt="">
+    <img class="mac-bck" src="{{productup.imgUrl}}" >
   </a>
-  <h4>{{product.title}}</h4>
-  <p><span>from ${{product.price}}</span></p>
+  <h4>{{productup.title}}</h4>
+  <p><span>from ${{productup.price}}</span></p>
 
 
-  <div class="color">
+  <div class="d-flex flex-column color align-items-center">
     <div class="d-flex justify-content-center circles mb-3">
       <div class="circle-color"></div>
       <div class="circle-color"></div>
       <div class="circle-color"></div>
     </div>
 
-    <div class="pb-4 buy-link">
+    <div class=" col-11 pb-4 buy-link">
       <a href="" class="btn btn-primary">
         Buy
       </a>
@@ -22,6 +23,7 @@
 
   </div>
 
-  <app-lower-single-specs class="col-9 mt-3 flex-column align-items-center linea" [producta]="product"></app-lower-single-specs>
+
+
 
 

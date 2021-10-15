@@ -1,0 +1,31 @@
+{
+    "header": [
+        {
+            "headerNavbar": {
+               "discountDevice" : {
+                   "discount": "true",
+                   "discountText": "Risparmia su un Mac per l’università con i prezzi Education. Avrai gli AirPods.* L’offerta termina l’11/10",
+                   "url": "'https://www.apple.com/it-edu/shop/back-to-school'"
+               }
+            }
+        }
+    ],
+
+    "main": [
+        {
+            "fullSizeCard": {
+                "isNew": "true",
+                "productTitle": "iMac",
+                "motto": "Viva il colore.",
+                "startingPrice": "1499",
+                "buyUrl": "https://www.apple.com/it/shop/buy-mac/imac",
+                "discoverUrl": "https://www.apple.com/it/imac-24/",
+                "picUrl": "/assets/img/Mac/main/full-size-big-Macs.png"
+            }
+        }
+    ],
+
+    "footer": [
+
+    ]
+}

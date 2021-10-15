@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { faGrinTongueSquint } from '@fortawesome/free-solid-svg-icons';
+import { IdiscountDevice } from 'src/app/models/Header';
 
 @Component({
   selector: 'app-discount-device',
@@ -7,10 +7,9 @@ import { faGrinTongueSquint } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./discount-device.component.scss']
 })
 export class DiscountDeviceComponent implements OnInit {
+  
+  @Input() discountDevice ?: IdiscountDevice;
 
-  @Input() discount !: boolean;
-  @Input() discountText !: string;
-  @Input() url !: string;
   bottom = "0px";
   zIndex = "-1";
   bgcolor = "#0071E3";

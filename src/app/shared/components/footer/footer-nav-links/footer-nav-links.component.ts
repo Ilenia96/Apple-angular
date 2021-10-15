@@ -24,7 +24,7 @@ accounts : ILink[] = account;
 aStores : ILink[] = appleStore;
 companies : ILink[] = business;
 educations : ILink[] = education;
-gesunds : ILink[] = health;
+healths : ILink[] = health;
 applevalues : ILink[]= appleValues;
 infos: ILink[] = info;
 

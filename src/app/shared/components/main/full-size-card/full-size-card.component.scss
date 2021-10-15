@@ -57,11 +57,9 @@ button {
     color: #fff;
 }
 
-.main-image {
-    width: 1070px;
-    height: 446px;
-    background-image: url("https://i.ibb.co/VHvdBHV/imac.png");
-    background-position: center;
+ .main-image {
+     width: 1070px;
+     height: 446px;
 }
 
 #discover-more {
@@ -84,8 +82,6 @@ button {
     .main-image {
         width: 735px;
         height: 308px;
-        background-image: url("https://i.ibb.co/VHvdBHV/imac.png");
-        background-size: 735px 308px;
     }
 }
 
@@ -101,7 +97,5 @@ button {
     .main-image {
         width: 322px;
         height: 472px;
-        background-image: url("https://i.ibb.co/Rz3Zz9V/imac-Small.png");
-        background-size: 322px 472px;
     }
 }
