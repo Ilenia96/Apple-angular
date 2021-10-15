@@ -1,13 +1,12 @@
 
-  <div class="list-specs col title d-flex flex-column justify-content-center align-items-center " *ngFor="let item of producta.specification">
+  <div class="list-specs col title d-flex flex-column justify-content-center align-items-center ">
+
+    <img src="{{specs.imgUrl}}" alt="" *ngIf="specs.imgUrl ">
+    <h4>{{specs.numinch}}</h4>
 
 
-    <img src="{{item.imgUrl}}" alt="" *ngIf="item.imgUrl ">
-    <h4>{{item.numinch}}</h4>
-
-
-    <p>{{item.title}}</p>
-    <p *ngIf="item.description">{{item.description}}</p>
+    <p>{{specs.title}}</p>
+    <p *ngIf="specs.description">{{specs.description}}</p>
 
 
 
