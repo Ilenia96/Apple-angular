@@ -8,7 +8,7 @@ import { IdiscountDevice } from 'src/app/models/Header';
 })
 export class DiscountDeviceComponent implements OnInit {
   
-  @Input() discountDevice !: IdiscountDevice;
+  @Input() discountDevice ?: IdiscountDevice;
 
   bottom = "0px";
   zIndex = "-1";
