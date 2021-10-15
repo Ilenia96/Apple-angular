@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="fullSizeCard">
     <div class="text-button text-center">
         <p *ngIf="fullSizeCard.isNew" class="new">Novità</p>
         <p class="productTitle"> {{fullSizeCard.productTitle}}</p>
