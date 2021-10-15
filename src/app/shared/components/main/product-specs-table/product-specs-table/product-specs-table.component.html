@@ -1,2 +1,16 @@
-<p>product-specs-table works!</p>
-<app-product-single-specs></app-product-single-specs>
+<div class="container-fluid pt-5 pb-5 product-container text-center">
+  <h1><b>Which Mac is right for you?</b></h1>
+  <a href="">Compare all mac models ></a>
+
+  <div class="switch p-3">
+    <button class="btn">Notebook</button>
+    <button class="btn">Desktop</button>
+  </div>
+
+  <div class="container d-flex justify-content-center">
+    <app-product-single-specs class="d-flex col-9" [productz]="productx"></app-product-single-specs>
+  </div>
+
+
+</div>
+

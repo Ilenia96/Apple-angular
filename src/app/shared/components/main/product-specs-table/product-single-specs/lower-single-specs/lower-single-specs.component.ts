@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IProductMac } from 'src/app/models/Products-mac';
 
 @Component({
   selector: 'app-lower-single-specs',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LowerSingleSpecsComponent implements OnInit {
 
+  @Input () producta!: IProductMac;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

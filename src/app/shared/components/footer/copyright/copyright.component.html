@@ -1,4 +1,4 @@
-<div class="copyright-container">
+<div class="copyright-container mt-4">
   <div class="container-contacts">
     <p>Altri modi per acquistare: <a class="blue-text" href="#">trova l’Apple Store</a> o <a class="blue-text"
         href="#">il
@@ -13,11 +13,8 @@
   </div>
 
   <div class="last-nav-footer">
-    <p><a href="#">Norme sulla privacy |</a></p>
-    <p class="last-nav-footer-element"><a href="#">Utilizzo dei cookie |</a></p>
-    <p class="last-nav-footer-element"><a href="#">condizioni d'uso |</a></p>
-    <p class="last-nav-footer-element"><a href="#">Vendite e rimborsi |</a></p>
-    <p class="last-nav-footer-element"><a href="#">Note Legali |</a></p>
-    <p class="last-nav-footer-element"><a href="#">Mappa del sito</a></p>
+
+    <p><a href="#" *ngFor="let privacylink of privacylinks"> {{privacylink.name}} |</a></p>
+
   </div>
 </div>

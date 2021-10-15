@@ -1,4 +1,7 @@
-<p>header-container works!</p>
-<app-header-navbar></app-header-navbar>
-<app-header-device></app-header-device>
-<app-discount-device></app-discount-device>
+<div class="container-fluid p-0">
+  <app-header-navbar></app-header-navbar>
+  <app-header-device></app-header-device>
+  <app-discount-device
+    [discountDevice] = "headerNavbar?.discountDevice"
+  ></app-discount-device>
+</div>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IHeaderNavbar } from "src/app/models/Header"
 
 @Component({
   selector: 'app-header-container',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderContainerComponent implements OnInit {
 
+  @Input() discount !: boolean;
+  @Input() discountText !: string;
+  @Input() url !: string;
+
+  @Input() headerNavbar !: IHeaderNavbar;
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

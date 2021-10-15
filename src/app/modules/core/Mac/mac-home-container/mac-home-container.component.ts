@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IHeader, IHeaderNavbar } from 'src/app/models/Header';
+import { MacDataService } from 'src/app/shared/services/MacDataService';
 
 @Component({
   selector: 'app-mac-home-container',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mac-home-container.component.scss']
 })
 export class MacHomeContainerComponent implements OnInit {
+  constructor(private macDataService: MacDataService) { }
 
-  constructor() { }
+  headerNavbar !: IHeaderNavbar;
 
   ngOnInit(): void {
+      this.macDataService.getHeader().subscribe(data => {
+        this.headerNavbar = data
+      });
+      // console.log(`${JSON.stringify(this.headerNavbar)}`);
+      // console.log(`${JSON.stringify(this.headerNavbar.discountDevice)}`);
+      // console.log(this.headerNavbar.discountDevice.discount);
   }
-
 }

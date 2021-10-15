@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IProductMac } from 'src/app/models/Products-mac';
 
 @Component({
   selector: 'app-product-single-specs',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-single-specs.component.scss']
 })
 export class ProductSingleSpecsComponent implements OnInit {
+
+  @Input () productz!: IProductMac[];
 
   constructor() { }
 

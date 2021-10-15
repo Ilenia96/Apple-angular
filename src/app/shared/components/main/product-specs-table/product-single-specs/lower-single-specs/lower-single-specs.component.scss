@@ -1,0 +1,38 @@
+$title-description-color:#86868b;
+$title-specs-size: 14px;
+
+.list-specs{
+
+  height: 140px;
+  text-align: center;
+    div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    img{
+    }
+    p:nth-child(2){
+      font-size: $title-specs-size;
+      margin: 0 auto;
+    }
+    p:nth-child(3){
+      font-size: $title-specs-size;
+      color: $title-description-color;
+    }
+  }
+
+
+}
+
+.title{
+  p{
+    font-size: $title-specs-size;
+    margin: 0;
+  }
+  p:nth-child(4){
+    color: $title-description-color;
+
+  }
+
+}

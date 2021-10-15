@@ -1,1 +1,13 @@
-<p>discount-device works!</p>
+<div *ngIf="discountDevice"
+
+[ngStyle]="{ 'bottom': bottom, 'z-index': zIndex, 'background-color': bgcolor, 'color': textColor }"
+
+class="container-fluid text-center d-flex justify-content-center">
+  <div id="discount-line" *ngIf="discountDevice.discount">
+    {{ discountDevice.discountText }}.
+    <a [ngStyle]="{'color': linkColor}" class="text-decoration-none" [href]="discountDevice.url">Acquista ora ></a>
+  </div>
+</div>
+
+<!-- [style.bottom.px] = bottom -->
+<!-- [ngClass]="{ bottom: bottom }" -->

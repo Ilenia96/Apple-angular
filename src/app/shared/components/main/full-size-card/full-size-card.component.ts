@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { IFullsizeCard } from 'src/app/models/Main';
 
 @Component({
   selector: 'app-full-size-card',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./full-size-card.component.scss']
 })
 export class FullSizeCardComponent implements OnInit {
+  
+  @Input() fullSizeCard !: IFullsizeCard;
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

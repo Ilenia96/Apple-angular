@@ -1,1 +1,16 @@
-<p>lower-single-specs works!</p>
+
+  <div class="list-specs col title d-flex flex-column justify-content-center align-items-center " *ngFor="let item of producta.specification">
+
+
+    <img src="{{item.imgUrl}}" alt="" *ngIf="item.imgUrl ">
+    <h4>{{item.numinch}}</h4>
+
+
+    <p>{{item.title}}</p>
+    <p *ngIf="item.description">{{item.description}}</p>
+
+
+
+  </div>
+
+
