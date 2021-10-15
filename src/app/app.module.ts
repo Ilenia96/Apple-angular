@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ import { FooterNavLinksComponent } from './shared/components/footer/footer-nav-l
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderContainerComponent } from './shared/components/header/header-container/header-container.component';
 import { DiscountDeviceComponent } from './shared/components/header/discount-device/discount-device.component';
+import { SafeHtmlPipe } from './shared/pipe/safe-html.pipe';
 
 
 
@@ -43,12 +45,14 @@ import { DiscountDeviceComponent } from './shared/components/header/discount-dev
     CopyrightComponent,
     FooterNavLinksComponent,
     HeaderContainerComponent,
-    DiscountDeviceComponent
+    DiscountDeviceComponent,
+    SafeHtmlPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

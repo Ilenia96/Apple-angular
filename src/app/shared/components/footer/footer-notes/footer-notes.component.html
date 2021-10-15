@@ -1,7 +1,7 @@
 <div class="footer-font color-gray">
     <p>* Offerta riservata ai clienti idonei che acquistano un Mac o un iPad inclusi nell’iniziativa insieme a un paio di AirPods idonei attraverso i canali aderenti. Un solo prodotto in promozione per ciascun Mac o iPad incluso nell’iniziativa e per ciascun cliente idoneo. Offerta soggetta a disponibilità. Fino a esaurimento scorte. L’offerta è soggetta a <a href="#" class="footer-link color-darkgray">termini e condizioni.</a></p>
     <ol class="padding-left-1rem">
-        <li *ngFor="let data of notesArray" class="margin-xy-05rem" [innerHTML]="data"></li>
+        <li *ngFor="let data of notesArray" class="margin-xy-05rem" [innerHTML]="data | safeHtml"></li>
     </ol>
     <hr class="color-gray">
 </div>
