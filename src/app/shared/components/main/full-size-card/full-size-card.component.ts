@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IFullsizeCard } from 'src/app/models/Main';
 
 @Component({
   selector: 'app-full-size-card',
@@ -7,12 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FullSizeCardComponent implements OnInit {
   
-  @Input() isNew !: boolean;
-  @Input() productTitle !: string;
-  @Input() motto !: string;
-  @Input() startingPrice !: number;
-  @Input() url !: string;
-
+  @Input() fullSizeCard !: IFullsizeCard;
 
   constructor() { }
 
