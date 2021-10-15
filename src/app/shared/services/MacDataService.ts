@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable} from "rxjs";
 import {tap} from "rxjs/operators"
+import { IFooter } from "src/app/models/Footer";
 import { IHeader, IHeaderNavbar } from "src/app/models/Header";
 import { IMain } from "src/app/models/Main";
 
@@ -24,8 +25,8 @@ export class MacDataService {
         return this.httpClient.get<IMain[]>('http://localhost:3000/main');
     }
 
-    getFooter(): Observable<any> {
-        return this.httpClient.get<any>('http://localhost:3000/footer');
+    getFooter(): Observable<IFooter[]> {
+        return this.httpClient.get<IFooter[]>('http://localhost:3000/footer');
     }
 
 }
