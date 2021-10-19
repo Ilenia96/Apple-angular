@@ -1,26 +1,8 @@
 export interface IFooter {
-    footerNav : IFooterNav;
+    footerNav : FooterNav;
 }
 
-export interface IFooterNav {
-    footerUpData: IFooterUpData;
-}
-
-export interface IFooterUpData {
+export interface FooterNav {
     notesArray: string[];
     navLinkString: string;
 }
-
-
-
-
-
-// --------
-// export interface IFooter {
-//     footerContainer : FooterContainer;
-// }
-
-// export interface FooterContainer {
-//     notesArray: string[];
-//     navLinkString: string;
-// }
