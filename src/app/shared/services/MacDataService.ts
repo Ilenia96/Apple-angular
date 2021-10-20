@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable} from "rxjs";
-import {map, tap} from "rxjs/operators"
+import {map} from "rxjs/operators"
 import { FooterNav, IFooter } from "src/app/models/Footer";
 import { IHeader, IHeaderNavbar } from "src/app/models/Header";
 import { IMain } from "src/app/models/Main";
@@ -11,14 +11,13 @@ import { IMain } from "src/app/models/Main";
         providedIn: 'root'
     }
 )
+
 export class MacDataService {
     
-    constructor (private httpClient : HttpClient) {
+    constructor (private httpClient : HttpClient) {}
 
-    }
-
-    getHeader(): Observable<IHeader[]> {
-        return this.httpClient.get<IHeader[]>('http://localhost:3000/header');
+    getHeader(): Observable<IHeaderNavbar> {
+        return this.httpClient.get<IHeader[]>('http://localhost:3000/header').pipe(map((data) => data[0]?.headerNavbar))
     }
 
     getMain(): Observable<IMain[]> {
@@ -31,5 +30,4 @@ export class MacDataService {
             map(data => data[0]?.footerNav)
         );
     }
-
 }
