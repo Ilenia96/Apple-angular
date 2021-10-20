@@ -8,7 +8,7 @@ import { IProductMac } from 'src/app/models/Products-mac';
 })
 export class UpperSingleSpecsComponent implements OnInit {
 
-  @Input () product!: IProductMac;
+  @Input () productup!: IProductMac;
 
   constructor() { }
 
